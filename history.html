@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Armada Tapestries</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='assets/fonts/novecento.css' rel='stylesheet' type='text/css'>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/css/libraries/slick.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/lightbox.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/audioplayer.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/animate.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/jquery.fs.ranger.min.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/magnific.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/jquery-ui.css" media="all">
+        <link rel="stylesheet" href="assets/css/main.css" media="all">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="overlay">
+                <div class="modal" id="zoom-overlay">
+                    <a href="javascript:Armada.Overlay.hide();" class="close-btn"><img src="assets/img/icons/close-dark.png" alt="close window"></a>
+                    <div id="zoom-overlay-content">
+
+                    </div>
+                </div>
+            </div>
+            <div id="header">
+                <div class="container" id="top">
+                    <h1 id="logo"><a href="index.html"><img src="assets/img/logo.png" alt="Armada Tapestries" /></a></h1>
+
+                    <ul id="main-navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="painting-process.html">Painting Process</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                    </ul>
+                </div>
+            </div>
+
+<div class="sub-navigation-wrapper history">
+    <div id="sub-navigation">
+        <div class="container">
+            <ul>
+                <li class="first"><a href="#top"><img src="assets/img/green-arrow-up.png" class="arrow"></a></li>
+                <li><a href="#genesis">Genesis</a></li>
+                <li><a href="#conflict">Conflict</a></li>
+                <li><a href="#tapestries">Tapestries</a></li>
+                <li><a href="#house-of-lords">House of Lords</a></li>
+                <li><a href="#pines-engravings">Pine's Engraving</a></li>
+                <li><a href="#disaster">Disaster</a></li>
+                <li><a href="#new-palace">New Palace</a></li>
+                <li><a href="#burchetts-painting">Burchett's Painting</a></li>
+                <li><a href="#revival" class="end">Revival</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="main-content" class="history-page">
+    <div class="container">
+        <div id="timeline"></div>
+    </div>
+    <div class="component masthead-component water-bg" id="history">
+        <div class="container">
+            <div class="text-container">
+                <h2><img src="assets/img/flourish.png"> The History <img src="assets/img/flourish.png"></h2>
+            </div>
+            <div class="image-wrapper statue animated fadeInUp">
+                <img src="assets/img/history/header/statue.jpg"/>
+            </div>
+            <div class="image-wrapper document-right animated fadeInUp">
+                <img src="assets/img/history/header/document-right.png"/>
+            </div>
+            <div class="image-wrapper document-left animated fadeInUp">
+                <img src="assets/img/history/header/document-left.png"/>
+            </div>
+            <div class="image-wrapper document-middle animated fadeInUp">
+                <img src="assets/img/history/header/document-middle.png"/>
+            </div>
+            <div class="image-wrapper needle animated fadeInUp">
+                <img src="assets/img/history/header/needle.png"/>
+            </div>
+            <div class="image-wrapper canonball animated fadeInUp">
+                <img src="assets/img/history/header/canonball.png"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="component light-grey">
+        <div class="container intro-text">
+            <p>For Lord Howard of Effingham the defeat of the Armada was the starting point of a different story which only ended in 2010. The tapestries he commissioned to celebrate England’s victory hung in the House of Lords for two centuries before being destroyed by fire. Plans to recreate them as paintings remained incomplete until a generous donation in 2007 saved the day.  </p>
+        </div>
+    </div>
+
+    <!-- The story -->
+    <div class="component hidden video-component history" id="the-story">
+        <div class="thin-container">
+            <h2>Video diary <img src="assets/img/flourish.png"></h2>
+            <div class="left-side">
+                <div class="video-container">
+                    <a href="https://www.youtube.com/watch?v=AyXUg_IhOWo" class="popup-video" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/painting-process/Video-History-1.jpg" />
+                        </div>
+                        <h3>The Story of the Armada</h3>
+                        <p>Philip II’s motives for attacking England, the action and fate of the Armada, and its significance.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="video-container">
+                    <a href="https://www.youtube.com/watch?v=wikA6LNMPLU" class="popup-video" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/painting-process/Video-History-2.jpg" />
+                        </div>
+                        <h3>From Tapestry to Painting</h3>
+                        <p>After hanging in the House of Lords until their destruction in 1834, the tapestries were finally recreated as paintings in 2010</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Genesis of War -->
+    <div class="component hidden carousel-component white" id="genesis">
+        <div class="thin-container">
+            <div class="carousel">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/history/large/ElandPh-L.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="Left: 'Elizabeth I' by Richard Burchett and circle, oil on panel, 1854-1860; WOA 3199 </br> Right: 'Philip II' by Richard Burchett and circle, oil on panel, 1854-1860; WOA 3198"><img data-lazy="assets/img/history/small/ElandPh.jpg" alt="Left: 'Elizabeth I' by Richard Burchett and circle, oil on panel, 1854-1860; WOA 3199 </br> Right: 'Philip II' by Richard Burchett and circle, oil on panel, 1854-1860; WOA 3198"></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title">Genesis of War</h2>
+                        <h4>Genesis of War      1554–1588</h4>
+                        <p>King Philip II of Spain and Queen Elizabeth I of England held a mutual hostility. They were related through Philip’s marriage to her elder sister Queen Mary I, whose death in 1558 ended his ability to style himself king of England. Philip never accepted Elizabeth’s right to reign, regarding her as a Protestant heretic and he backed plots to eject her in favour of the Catholic Mary Queen of Scots. Tired of English attacks on his treasure ships, enraged by Elizabeth’s support of Dutch rebels in the Netherlands and her execution of Mary Queen of Scots in 1587, Philip despatched the Spanish Armada a year later to take England by force. </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/history/large/1.2.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="Detail from, 'The Discovery of the Spanish Fleet opposite the Lizard', by Anthony Oakshett, oil and gold leaf on canvas, 2010; WOA 7123 "><img data-lazy="assets/img/history/large/1.2.jpg" alt="Detail from, 'The Discovery of the Spanish Fleet opposite the Lizard', by Anthony Oakshett, oil and gold leaf on canvas, 2010" style="max-width: 400px; WOA 7123"></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title">Genesis of War</h2>
+                        <h4>Spain's strategy</h4>
+                        <p>Spain’s mustering of her troops was impeded by Sir Francis Drake’s attack on Cadiz in 1587. Early in the new year, the Duke of Medina Sidonia completed preparations of the fleet at Lisbon, while the Duke of Parma readied his army from Brussels. Philip II’s plan was for Sidonia to lead the Armada up the Channel, then embark Parma’s troops and escort them aboard barges from Flanders to the shores of England. In parallel the troops would march and the ships sail on London, seizing control of both throne and government. A major pitfall, foreseen by Parma, was the improbability that Sidonia’s ships would safely dodge English and Dutch attackers in order meet his men.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conflict -->
+    <div class="component hidden carousel-component light-grey" id="conflict">
+        <div class="thin-container">
+            <div class="carousel">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/history/large/3.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="'The Discovery of the Spanish Fleet opposite the Lizard', by Anthony Oakshett, oil and gold leaf on canvas, 2010; WOA 7123"><img data-lazy="assets/img/history/small/3.jpg" alt="'The Discovery of the Spanish Fleet opposite the Lizard', by Anthony Oakshett, oil and gold leaf on canvas, 2010; WOA 7123" ></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title">Conflict        July 1588</h2>
+                        <h4>Conflict</h4>
+                        <p>The Armada was first seen off the south-west coast of England in late July 1588. Commanded by the Duke of Medina Sidonia, the Spanish fleet had over 130 ships and was 7 miles wide in formation. Large transport vessels were protected by heavily armed galleons. Carrying 7,000 sailors and 19,000 soldiers, together with horses and heavy siege guns, it was described as ‘invincible’.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/history/large/4.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="‘Drake takes De Valdez’s Galleon: The Lord Admiral Pursues the Enemy’, by Anthony Oakshett, oil and gold leaf on canvas, 2010; WOA 7124"><img data-lazy="assets/img/history/small/4.jpg"alt="‘Drake takes De Valdez’s Galleon: The Lord Admiral Pursues the Enemy’, by Anthony Oakshett, oil and gold leaf on canvas, 2010; WOA 7124 "></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title"></h2>
+                        <h4>Pursuit</h4>
+                        <p>The Spanish planned to seize control of the English Channel, collecting the Duke of Parma’s 30,000 soldiers off Holland before sailing for England and marching on London. To prevent this, the English had to defeat the Spanish at sea. In command of England’s fleet, Lord Howard of Effingham pursued the Armada for two weeks, seeking every chance to attack and weaken this powerful fighting force.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/history/large/5.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="‘English Fireships Dislodge the Spanish Fleet before Calais’, by Anthony Oakshett, oil and gilding on canvas, 2010; WOA 7127"><img data-lazy="assets/img/history/small/5.jpg"alt="‘English Fireships Dislodge the Spanish Fleet before Calais’, by Anthony Oakshett, oil and gilding on canvas, 2010; WOA 7127" ></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title"></h2>
+                        <h4>Attacks</h4>
+                        <p>The fleets engaged off Plymouth and then the Isle of Portland. Although the English captured two Spanish ships the Armada continued its progress. When it paused, the English fleet attacked again and forced the Spanish back into open sea – and for want of a safe harbour – on to Calais. Desperate to stop the Armada collecting the Duke of Parma’s army, the English launched a fire-ship assault at midnight on 7th August. They set alight boats loaded with flammable materials, propelling them towards the Spanish fleet. In alarm and confusion, the Spanish cut their anchor cables, losing their close formation during the night.</p>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/history/large/X-1-M.jpg" class="popup-image" data-copyright="© House of Lords Library" title="‘The Spaniards make the best of their way for the Northern Seas; and are, in the mean time, very much battered by the English, who closely pursue them. The chief Galleass is stranded near Calais’, by John Pine, engraving, 1739"><img data-lazy="assets/img/history/small/X-1-M.jpg" alt="‘The Spaniards make the best of their way for the Northern Seas; and are, in the mean time, very much battered by the English, who closely pursue them. The chief Galleass is stranded near Calais’, by John Pine, engraving, 1739" style="max-width: 400px;" ></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title"></h2>
+                        <h4>End game</h4>
+                        <p>As the Spanish tried to regain their grouping off the port of Gravelines, English commanders launched an attack. It was the fiercest battle of the conflict, with five Spanish ships lost and many others damaged. In the aftermath, the Armada faced destruction on the uncharted Flanders sandbanks, while – out of shot range – the English shadowed them. A change in the wind blew the Spanish into deeper waters and forced them into the North Sea. Gales and the English pursuit as far as the Firth of Forth meant the Spanish had to sail around Scotland and the west of Ireland. Hard hit by Atlantic storms, many ships were wrecked and only 67 returned to Spain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Tapestries -->
+    <div class="component hidden carousel-component white" id="tapestries">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">The Tapestries  1592–1616</h2>
+                        <h4>Commission</h4>
+                        <p>Lord Howard of Effingham commissioned a set of 10 tapestries to celebrate England’s victory over the Spanish Armada. Each was taller than 14ft and up to 28ft wide (4.4m x 8.7m). With sumptuously decorated borders around the battle scenes, and glittering gold and silver threads, the tapestries were spectacular. Costing £1,582, the equivalent of 87 years of wages for the average workman, they showed Effingham’s wealth and the importance he attached to the triumph. On completion in 1595 they hung in his London residence.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/2.1.jpg" class="popup-image" data-copyright="© National Maritime Museum" title="‘Charles Howard, 2nd Baron of Effingham, 1st Earl of Nottingham’, by Daniel Mytens, oil on canvas, about 1620; BHC2786 (Greenwich Hospital Collection)"><img data-lazy="assets/img/history/large/2.1.jpg" alt="‘Charles Howard, 2nd Baron of Effingham, 1st Earl of Nottingham’, by Daniel Mytens, oil on canvas, about 1620; BHC2786 (Greenwich Hospital Collection)" ></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Vroom and Spierincx</h4>
+                        <p>The tapestries were designed by the celebrated Dutch marine artist Hendrick Cornelisz Vroom (1566–1640) and woven by Francis Spierincx (1549/51–1630), one of the most important weavers in Europe. Vroom used a set of charts showing the progress of the battles, drawn for Effingham by the cartographer Robert Adams (died 1595). Taking information about the ships’ positions, Vroom used perspective to show the battles from a bird’s-eye view. This was an innovation in tapestry design.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/24.html" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/Br72-007 Bergen op Zoom-small.jpg" class="popup-image" data-copyright="© Zeeuws Museum" title="'The Battle of Bergen op Zoom', by Hendrick Cornelius Vroom (designer) and Francois Spierinck (weaver), tapestry, 1583–5"><img data-lazy="assets/img/history/small/Br72-007 Bergen op Zoom-small.jpg" alt="'The Battle of Bergen op Zoom', by Hendrick Cornelius Vroom (designer) and Francois Spierinck (weaver), tapestry, 1583–5" ></a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Weaving the tapestries</h4>
+                        <p>To repeat Vroom’s design, weavers in the Spierincx workshop in Delft used a full scale drawing, known as a ‘cartoon’. Sitting together at the loom, they passed weft threads in between the warp to build up the tapestries from one end of the picture. The weavers’ heavy gold and silver thread was made of silk, with fine metal wire wrapped around it. According to whether they had a ‘high’ or ‘low’ loom, the weaving was made vertically or horizontally. Tapestry weaving was labour intensive and time-consuming.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/8.jpg" class="popup-image" data-copyright="© Philip Sanderson" title="Caron Penney weaving ‘Democracy’, designed by Pat Taylor for the Parliamentary Art Collection (WOA T11 commisioned for the Thatcher Room)"><img data-lazy="assets/img/history/small/8.jpg" alt="Caron Penney weaving ‘Democracy’, designed by Pat Taylor for the Parliamentary Art Collection, WOA T11"></a>
+                        <a href="assets/img/history/large/9.jpg" class="popup-image" data-copyright="© Philip Sanderson" title="Caron Penney weaving ‘Democracy’, designed by Pat Taylor for the Parliamentary Art Collection (WOA T11 commisioned for the Thatcher Room)"><img data-lazy="assets/img/history/small/9.jpg" alt="Caron Penney weaving ‘Democracy’, designed by Pat Taylor for the Parliamentary Art Collection, WOA T11"></a>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Royal Purchase</h4>
+                        <h4>1616</h4>
+                        <p>Queen Elizabeth I saw the completed tapestries in 1602 and it was rumoured that Lord Howard of Effingham might present them to her as a gift. However he kept the hangings until 1616 when he sold them to King James I for £1,628.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/4.3.jpg" class="popup-image" data-copyright="© National Portrait Gallery, London" title="'King James of England and VI of Scotland', by John De Critz the Elder (about 1552 - 1642), oil on panel, about 1606; NPG 548"><img data-lazy="assets/img/history/small/4.3.jpg" alt="Caron Penney weaving ‘Democracy’, designed by Pat Taylor for the Parliamentary Art Collection, WOA T11"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Royal Purchase / House of Lords -->
+    <div class="component hidden carousel-component light-grey" id="house-of-lords">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">Hanging in the House of Lords</h2>
+                        <h4>1644 - 1844</h4>
+                        <p>The tapestries were first hung in the House of Lords at the Palace of Westminster in 1644. Initially they were shown only during important events, but by 1651 were probably displayed permanently. Vast in size and dominating the Lords’ Chamber, the tapestries feature in the background of pictures showing debates and state occasions. In the painting of <em>Queen Anne in the House of Lords</em>, by Peter Tillemans (about 1713–14), they fill the full height of the walls.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/5.0.1.jpg" class="popup-image" data-copyright="© Royal Collection, Her Majesty the Queen Elizabeth II" title="Queen Anne in the House of Lords’, by Peter Tillemans, oil on canvas, about 1713–14; RCIN 405301"><img data-lazy="assets/img/history/small/5.0.1.jpg" alt="Queen Anne in the House of Lords’, by Peter Tillemans, oil on canvas, about 1713–14 ; RCIN 405301"></a>
+                        <a href="assets/img/history/large/1195-1-h.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="‘Plan of the City of Westminster 1578’, by Radulf Aggas, engraving after a woodcut, published 1807; WOA 1195"><img data-lazy="assets/img/history/large/1195-1-h.jpg" alt="‘Plan of the City of Westminster 1578’, by Radulf Aggas, engraving after a woodcut, published 1807; WOA 1195"></a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>National icons</h4>
+                        <p>The tapestries’ iconic status increased as they hung in the House of Lords during the 18th and early 19th centuries. In times of national crisis they were a potent reminder of the 1588 victory. When debates in 1798 centred on fears of a French invasion, the satirist James Gillray designed cartoons to galvanise people. One of the scenes in his ‘Consequences of a Successful French Invasion’ depicts a French Revolutionary ordering an attack on the tapestries in the Lords Chamber, an affront to Britain’s maritime identity.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/12.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="‘Consequences of a Successful French Invasion’, by James Gillray, engraving, 1798 or after, published 1855; WOA 5803"><img data-lazy="assets/img/history/small/12.jpg" alt="‘Consequences of a Successful French Invasion’, by James Gillray, engraving, 1798 or after, published 1855; WOA 5803" ></a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Relocation</h4>
+                        <p>In the early years the tapestries decorated the House of Lords Parliament Chamber, but from 1801 peers moved to the more spacious Court of Requests. Here the aged and fragile tapestries were specially cleaned and supported on wooden frames. A watercolour of 1831–4 shows King William IV on the throne at the State Opening of Parliament, the walls filled with tapestry hangings. The painting was one of the last images produced showing both the Chamber and textiles before they were destroyed in 1834.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/13.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="‘The House of Lords in the Court of Requests; King William IV at the State Opening of Parliament’, attributed to William Heath, watercolour, about 1831–4; WOA 2542 "><img data-lazy="assets/img/history/small/13.jpg" alt="‘The House of Lords in the Court of Requests; King William IV at the State Opening of Parliament’, attributed to William Heath, watercolour, about 1831–4; WOA 2542" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pine's Engravings -->
+    <div class="component hidden carousel-component white" id="pines-engravings">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">Pine's Engravings</h2>
+                        <h4>1739</h4>
+                        <p>In 1739 John Pine (1690–1756) published engravings of the ten Armada tapestries, together with his version of charts originally produced by Robert Adam (died 1595). In his introduction, Pine pointed to the tapestries’ national significance, describing the defeat of the Spanish Armada as, ‘the most glorious Victory that was ever obtained at Sea, and the most important to the British Nation’. The reason he gave for reproducing the tapestries was, ‘because time, or accident, or moths may deface these valuable shadows’. His words were prophetic. After the tapestries were lost in 1834, his engravings provided a unique record of them.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/6.0.jpg" class="popup-image" data-copyright="© National Portrait Gallery, London" title="‘John Pine’, by James Macardell after William Hogarth, mezzotint, about 1740–1765"><img data-lazy="assets/img/history/small/6.0.jpg" alt="‘John Pine’, by James Macardell after William Hogarth, mezzotint, about 1740–1765 " ></a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Pine's sources</h4>
+                        <p>Pine used the charts by Robert Adam, along with drawings of the central scenes in each tapestry by C. Lemprière, as source material. For the portrait heads of naval commanders in the decorative border, he worked from Hubert- Francois Gravelot’s (1699–1773) drawings. The border designs from the tapestries were closely copied in plates II, IV, VI, VIII and X. However in plates I, III, V, VII and IX Pine introduced a new border design, showing his skill working in the Tudor or later Rococo styles. He explained that this change was to add variety and to allow portraits of Sir Robert Carey, Sir Roger Townshend and Sir Thomas Gerard to be included.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/Map-II-1-L.jpg" class="popup-image" data-copyright="© House of Lords Library" title="‘Maps of the Spanish Armada off the coast of Cornwall and Devonshire’ by John Pine after Robert Adams, engraving, 1739"><img data-lazy="assets/img/history/small/Map-II-1-M.jpg" alt="‘Maps of the Spanish Armada off the coast of Cornwall and Devonshire’ by John Pine after Robert Adams, engraving, 1739" style="max-width: 400px;"></a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Copyright</h4>
+                        <p>A good friend of the artist William Hogarth, Pine was a fellow member of the Old Slaughter’s Coffee House on St Martin’s Lane. Together with colleagues they successfully petitioned Parliament to protect artists’ rights, resulting in the Engraving Copyright Act of 1735. Pine won a clause within it which gave him exclusive permission to reproduce the Armada tapestries. Commercially astute, he waited until the Act was in place before proceeding with the project.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/6.2.jpg" class="popup-image" data-copyright="© Parliamentary Archives" title="Detail from the 'Engraving and Copyright Act, 1735; HL/PO/PU/1/1734/8G2n28"><img data-lazy="assets/img/history/small/6.2.jpg" alt="Detail from the 'Engraving and Copyright Act, 1735; HL/PO/PU/1/1734/8G2n28"></a>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Pine’s publication</h4>
+                        <p>Pine’s publication ‘The Tapestry Hangings in the House of Lords’ shows his engravings of the tapestries. The ten 14 x 23-inch (35.6 cm x 58.4 cm) engraved views show the sequence of engagements; sometimes more than one action is depicted within a design. From the first sighting of the Armada off the coast of Cornwall, Pine’s illustrations chart its progress up the Channel as far as Gravelines, pursued and attacked by the English. Pine also lists distinguished subscribers to his publication and records the details of each fleet, including the captains’ names and armaments carried for the land invasion.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/43.jpg" class="popup-image" data-copyright="© House of Lords Library" title="Frontispiece of ‘The Tapestry Hangings of the House of Lords’ by John Pine, book of engravings, 1739"><img data-lazy="assets/img/history/small/43.jpg" alt="Frontispiece of ‘The Tapestry Hangings of the House of Lords’ by John Pine, book of engravings, 1739" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Series of Engravings by Pine -->
+    <div class="component hidden gallery-carousel-component light-grey" id="pines-engravings-series">
+        <div class="thin-container">
+            <h2><img src="assets/img/flourish.png"> The Series of engravings by Pine <img src="assets/img/flourish.png"></h2>
+
+            <div id="gallery-carousel">
+                <div class="gallery-slide">
+                    <a href="assets/img/history/large/I-1-M.jpg" class="popup-image" data-copyright="© House of Lords Library" title="Plate I      ‘The Spanish Fleet coming up the Channel, opposite the Lizard, as it was first discovered.’ by John Pine, engraving, 1739"><img data-lazy="assets/img/history/small/I-1-M.jpg" alt="Plate I      ‘The Spanish Fleet coming up the Channel, opposite the Lizard, as it was first discovered.’ by John Pine, engraving, 1739"></a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="assets/img/history/large/II-1-M.jpg" class="popup-image" data-copyright="© House of Lords Library" title="Plate II     ‘The Spanish Fleet against Fowey, drawn up in the Form of a Half Moon, and the English Fleet pursuing them.’ by John Pine, engraving, 1739"><img data-lazy="assets/img/history/small/II-1-M.jpg" alt="Plate II      ‘The Spanish Fleet against Fowey, drawn up in the Form of a Half Moon, and the English Fleet pursuing them.’ by John Pine, engraving, 1739"></a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="assets/img/history/large/III-1-L.jpg" class="popup-image" data-copyright="© House of Lords" title="Plate III       ‘At the left Hand Corner is represented the first Engagement between the Spanish and English Fleets: After which the English give Chace to the Spaniards, who draw themselves up in a Roundel.’ by John Pine, engraving, 1739"><img data-lazy="assets/img/history/small/III-1-L.jpg" alt="Plate III     ‘At the left Hand Corner is represented the first Engagement between the Spanish and English Fleets: After which the English give Chace to the Spaniards, who draw themselves up in a Roundel.’ by John Pine, engraving, 1739"></a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="assets/img/history/large/IV-1-L.jpg" class="popup-image" data-copyright="© House of Lords Library" title="Plate IV     ‘De Valdez’s Galleon springs her Foremast, and is taken by Sir Francis Drake. The Lord-Admiral with the Bear and Mary Rose, pursue the Enemy, who are in the Form of a Half Moon.’ by John Pine, engraving, 1739"><img data-lazy="assets/img/history/small/IV-1-L.jpg" alt="Plate IV        ‘De Valdez’s Galleon springs her Foremast, and is taken by Sir Francis Drake. The Lord-Admiral with the Bear and Mary Rose, pursue the Enemy, who are in the Form of a Half Moon.’ by John Pine, engraving, 1739"></a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="assets/img/history/large/V-1-L.jpg" class="popup-image" data-copyright="© House of Lords Library" title="Plate V       ‘The Admiral of the Guypuscoan Squadron being set on Fire, is taken by the English. The rest of the Spanish Fleet continue their Course in the Form of a Half Moon: And when both Fleets were against the Isle of Portland, they come to an Engagement.’ by John Pine, engraving, 1739 "><img data-lazy="assets/img/history/small/V-1-L.jpg" alt="Plate V       ‘The Admiral of the Guypuscoan Squadron being set on Fire, is taken by the English. The rest of the Spanish Fleet continue their Course in the Form of a Half Moon: And when both Fleets were against the Isle of Portland, they come to an Engagement.’ by John Pine, engraving, 1739"></a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="assets/img/history/large/VI-1-L.jpg" class="popup-image" data-copyright="© House of Lords Library" title="Plate VI     ‘Some English Ships attack the Spanish Fleet to the Westward. The Spaniards draw themselves into a Roundel: And afterwards keeping on their Course, are followed by the English.’ by John Pine, engraving, 1739"><img data-lazy="assets/img/history/small/VI-1-L.jpg" alt="Plate VI     ‘Some English Ships attack the Spanish Fleet to the Westward. The Spaniards draw themselves into a Roundel: And afterwards keeping on their Course, are followed by the English.’ by John Pine, engraving, 1739"></a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="assets/img/history/large/VII-1-L.jpg" class="popup-image" data-copyright="© House of Lords Library" title="Plate VII   ‘Represent the sharpest Engagement that happen’d between the two Fleets, on July 25, against the Isle of Wight.’ by John Pine, engraving, 1739"><img data-lazy="assets/img/history/small/VII-1-L.jpg" alt="Plate VII    ‘Represent the sharpest Engagement that happen’d between the two Fleets, on July 25, against the Isle of Wight.’ by John Pine, engraving, 1739"></a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="assets/img/history/large/VIII-1-L.jpg" class="popup-image" data-copyright="© House of Lords" title="Plate VIII ‘The Spanish Fleet is seen sailing up the Channel, intending to stop at Dunkirk or Calais, where they were to be join’d by the Duke of Parma: The English follow them close.’ by John Pine, engraving, 1739"><img data-lazy="assets/img/history/small/VIII-1-L.jpg" alt="Plate VIII ‘The Spanish Fleet is seen sailing up the Channel, intending to stop at Dunkirk or Calais, where they were to be join’d by the Duke of Parma: The English follow them close.’ by John Pine, engraving, 1739"></a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="assets/img/history/large/IX-1-L.jpg" class="popup-image" data-copyright="© House of Lords Library" title="Plate IX     ‘The Spaniards come to an Anchor before Calais, from whence they are dislodg’d by the Fireships sent amongst them in the Night: The English prepare to pursue them.’ by John Pine, engraving, 1739"><img data-lazy="assets/img/history/small/IX-1-L.jpg" alt="Plate IX      ‘The Spaniards come to an Anchor before Calais, from whence they are dislodg’d by the Fireships sent amongst them in the Night: The English prepare to pursue them.’ by John Pine, engraving, 1739"></a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="assets/img/history/large/X-1-L.jpg" class="popup-image" data-copyright="© House of Lords Library" title="Plate X       ‘The Spaniards make the best of their way for the Northern Seas; and are, in the mean time, very much battered by the English, who closely pursue them. The chief Galleass is stranded near Calais.’ by John Pine, engraving, 1739"><img data-lazy="assets/img/history/small/X-1-L.jpg" alt="Plate X        ‘The Spaniards make the best of their way for the Northern Seas; and are, in the mean time, very much battered by the English, who closely pursue them. The chief Galleass is stranded near Calais.’ by John Pine, engraving, 1739"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disaster -->
+    <div class="component hidden carousel-component white" id="disaster">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">Disaster</h2>
+                        <h4>1834</h4>
+                        <p>On the night of 16th October 1834 the tapestries were destroyed when the buildings of the old Palace of Westminster were ravaged by fire. It began when flues close to the House of Lords Chamber ignited, and the textiles could not be saved. People were deeply saddened by the loss of these national symbols, because the tapestries had such artistic and historic value.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/0054-1-m.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="‘Fire 1834: View from Lambeth Shore of the Palace of Westminster’, by David Hall McKewan, watercolour, 1834; WOA 54"><img data-lazy="assets/img/history/small/0054-1-h.jpg" alt="Watercolour of House of lords from the Old Palace after the Fire; WOA 54" ></a>
+                        <a href="assets/img/history/large/17.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="‘The House of Lords from Old Palace Yard’, by Robert William Billings, watercolour, 1834; WOA 1660"><img data-lazy="assets/img/history/small/17.jpg" alt="‘The House of Lords from Old Palace Yard’, by Robert William Billings, watercolour, 1834; WOA 1660" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Palace -->
+    <div class="component hidden carousel-component light-grey" id="new-palace">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">Building the new palace of Westminster</h2>
+                        <h4>1836–1870</h4>
+                        <p>The new Palace of Westminster was conceived as a union of architecture, fine art and sculpture. The choice of Gothic celebrated British architectural traditions and the architect Sir Charles Barry designed the grand interiors so that cycles of paintings and schemes of sculpture could be showcased, illustrating the nation’s history. Re-creating the destroyed Armada tapestries was part of this great artistic initiative.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/1164-1-h-2.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="‘The Building of Westminster Bridge’, by John Anderson, oil on canvas, 1860; WOA 1164"><img data-lazy="assets/img/history/large/1164-1-h-2.jpg" alt="‘The Building of Westminster Bridge’, by John Anderson, oil on canvas, 1860; WOA 1164" ></a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Art commissions</h4>
+                        <p>To decorate the Palace with new schemes of art by the nation’s best painters and sculptors, a Royal Commission on Fine Arts was established in 1841. Chaired by Prince Albert, its aims were to illustrate the story of British history up to the reign of Queen Victoria, while promoting the country’s arts. Members chose subjects that showed Britain at its best, reflecting their view that it was the most powerful country in the world. The significance of the defeat of the Spanish Armada in 1588 guaranteed its inclusion into the planned scheme.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/3155-1-h-2.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="‘Prince Albert, The Prince Consort (1819-1861)’, after Franz Xaver Winterhalter, oil on canvas, 1859; WOA 3155"><img data-lazy="assets/img/history/large/3155-1-h-2.jpg" alt="‘Prince Albert, The Prince Consort (1819-1861)’, after Franz Xaver Winterhalter, oil on canvas, 1859; WOA 3155" ></a>                    
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>The Prince's Chamber</h4>
+                        <p>Leading into the House of Lords, the Prince’s Chamber was to be decorated with art on the theme of Tudor history, with recreations of the Armada tapestries high on the walls. The rest of the scheme was comprised of twelve bronze relief sculptures of Tudor scenes and twenty-eight portraits of royalty from that period. England’s victory over the Armada in 1588 was early evidence of the nation’s maritime power, which peaked during Queen Victoria’s reign. By placing the Armada series above the statue of Victoria, she and Elizabeth I were linked as great ‘rulers of the waves’.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/5543-1-h-2.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="‘The Royal Ante Chamber, later called The Prince’s Chamber’, probably by the Office of Works, drawing of elevations, about 1840; WOA 5543"><img data-lazy="assets/img/history/large/5543-1-h-2.jpg" alt="‘The Royal Ante Chamber, later called The Prince’s Chamber’, probably by the Office of Works, drawing of elevations, about 1840; WOA 5543" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Burchett's Painting -->
+    <div class="component hidden carousel-component white" id="burchetts-painting">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/history/large/A.9.jpg" class="popup-image" data-copyright="© National Portrait Gallery, London" title="Richard Burchett, wood engraving after an unknown artist, published 1875, London"><img data-lazy="assets/img/history/small/A.9.jpg" alt="Richard Burchett, wood engraving after an unknown artist, published 1875, © National Portrait Gallery, London"></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title">Burchett's Painting</h2>
+                        <h4>1850s</h4>
+                        <p>Richard Burchett (1815–1875) was chosen in the 1850s by the Commission to paint copies of historic Tudor royal portraits, and to produce painted reproductions of the Armada tapestries. He involved and supervised students from the art school he headed, the forerunner of today’s Royal College of Art.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/history/large/21.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="‘The English Fleet Pursuing the Spanish Fleet against Fowey’, by Richard Burchett, oil and gold leaf on canvas, about 1860; WOA 2954"><img data-lazy="assets/img/history/small/21.jpg" alt="‘The English Fleet Pursuing the Spanish Fleet against Fowey’, by Richard Burchett, oil and gold leaf on canvas, about 1860; WOA 2954" ></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title">Burchett's Painting</h2>
+                        <h4>1850s</h4>
+                        <p>Burchett completed only one Armada painting, ‘The English Fleet Pursuing the Spanish Fleet Against Fowey’, based closely on Pine’s print of the tapestry. It was a sample painting and the second in the narrative sequence, its dimensions showing that it was meant to hang above Queen Victoria’s statue. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Revival -->
+    <div class="component hidden carousel-component light-grey" id="revival">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">Revival</h2>
+                        <h4>1900s-2000s</h4>
+                        <p>After Prince Albert died in 1861, the Fine Arts Commission curtailed their plans for schemes of art and work on the Armada paintings was halted indefinitely. Burchett’s single completed painting was placed in storage and the empty wall compartments of the Prince’s Chamber were hung with Pugin wallpaper. The project was revived in 1907, when a Select Committee for the completion of interior decorations at the Palace included the Armada paintings as one of three priority plans. Two of these were realised, but the onset of the First World War meant that the Armada paintings were abandoned again.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/22.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection" title="The Prince’s Chamber before installation of the Armada Paintings."><img data-lazy="assets/img/history/small/22.jpg" alt="The Prince’s Chamber before installation of the Armada Paintings." ></a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>2007-2010</h4>
+                        <p>In 2007 Mark Pigott KBE made a generous donation to the House of Lords for the purchase of a significant piece of historical art. The Works of Art Committee discussed a proposal that the funds be used towards completing the Armada paintings for the Prince’s Chamber. Having established that the amount would cover two paintings – and mindful of the Victorian and Edwardian difficulties over the commission – they considered ways of raising funds to complete the series. The Committee Chairman, Lord Crathorne, told Mark Pigott of the peers’ enthusiasm for the project and their dilemma. Mark Pigott generously agreed to underwrite the cost of all five paintings, making it possible for the House of Lords finally to bring the 1860s plan to fruition.</p>
+                        <p>Mr Pigott shared,<em>‘My family is pleased to offer the Armada paintings as our gift to the Nation. We have been partners with the UK for over 30 years and are very grateful for the country enabling our business to flourish. We have forged many wonderful friendships in the UK. The idea of undertaking this monumental project, and commemorating one of England’s finest victories, was a once in a lifetime opportunity that was eagerly embraced. I am pleased that the paintings will be displayed for all to enjoy in perpetuity. Thank you to Prince Albert for initiating this project and to the entire artistic team for delivering a world class panorama.’</em></p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history-timeline/mark-piggott-s.jpg" class="popup-image" data-copyright="© Mark Piggott KBE" title=""><img data-lazy="assets/img/history-timeline/mark-piggott.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+            <div class="push"></div>
+        </div><!-- /#wrapper -->
+        <div id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <ul class="column">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="painting-process.html">Painting Process</a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="credits.html">Credits</a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><a href="mailto:curator@parliament.uk">Contact</a></li>
+                        <li><a href="http://www.parliament.uk/art">View more House of Lords Artwork</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <span>&copy; 2015 House of Lords</span><img src="assets/img/house-of-lords.jpg">
+                    <span style="float: right;">Site by <a href="http://www.studio24.net">Studio24</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Libraries -->
+        <script src="assets/js/libraries/jquery.min.js"></script>
+        <script src="assets/js/libraries/jquery.nav.js"></script>
+        <script src="assets/js/libraries/jquery.slick.min.js"></script>
+        <script src="assets/js/libraries/jquery.audioplayer.min.js"></script>
+        <script src="assets/js/libraries/jquery.lightbox.min.js"></script>
+        <script src="assets/js/libraries/jquery.viewportchecker.js"></script>
+        <script src="assets/js/libraries/jquery.panzoom.min.js"></script>
+        <script src="assets/js/libraries/magnific.js"></script>
+        <script src="assets/js/libraries/jquery-ui.min.js"></script>
+
+        <!-- Our Code -->
+        <script src="assets/js/lib.min.js"></script>
+        <script src="assets/js/main.min.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-51081446-1', 'parliament.uk');
+            ga('send', 'pageview');
+        </script>
+
+<script>
+    $(document).ready(function(){
+
+        // Setup the values for the timeline
+        var timelineValues = {
+            '#history' : '1554',
+            '#genesis' : '1554',
+            '#conflict' : '1588',
+            '#tapestries' : '1592',
+            '#house-of-lords' : '1644',
+            '#pines-engravings' : '1739',
+            '#disaster' : '1834',
+            '#new-palace' : '1836',
+            '#burchetts-painting' : '1850s',
+            '#revival' : '1900s'
+        };
+
+        // Run the library code to create the timeline
+        Armada.Timeline.create(timelineValues);
+
+        $('#gallery-carousel').slick({
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 3,
+            lazyLoad: 'ondemand'
+        });
+
+    });
+</script>
+
+    </body>
+</html>

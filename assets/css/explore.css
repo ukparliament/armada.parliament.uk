@@ -1,0 +1,409 @@
+/*!
+ * ArmadaTapestries
+ * @author Studio 24
+ * @version 0.0.1
+ * Copyright 2014 Studio 24.  licensed.
+ */
+
+.simple-content {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+}
+
+#header {
+  position: relative;
+  z-index: 10;
+}
+
+#panorama-container {
+  position: relative;
+  z-index: 1;
+}
+#panorama-container #panorama {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  z-index: 1;
+}
+#panorama-container #panorama-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url("../img/explore/pano-controls-bg.png") repeat;
+  width: 1003px;
+  height: 110px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 2px solid #fff;
+  border-bottom: none;
+  z-index: 2;
+}
+#panorama-container #panorama-controls a.close-btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+}
+#panorama-container #panorama-controls a.close-btn:hover {
+  text-decoration: underline;
+}
+#panorama-container #panorama-controls h3 {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 0;
+  margin: 0 0 0 10px;
+  text-shadow: #333 0 1px 1px;
+}
+#panorama-container #panorama-controls .controls-360 {
+  float: left;
+  width: 300px;
+  padding: 15px;
+}
+#panorama-container #panorama-controls .controls-360 ul.controls {
+  list-style-type: none;
+  margin: 18px 0 0 0;
+  padding: 0;
+}
+#panorama-container #panorama-controls .controls-360 ul.controls li {
+  float: left;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+#panorama-container #panorama-controls .controls-points-of-interest {
+  float: right;
+  width: 510px;
+  padding: 15px 5px;
+  margin: 0;
+}
+#panorama-container #panorama-controls .controls-points-of-interest ul.paintings {
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+#panorama-container #panorama-controls .controls-points-of-interest ul.paintings li {
+  float: left;
+  display: block;
+  height: 50px;
+  background: #eee;
+  margin: 0 10px;
+  border: 2px solid #e2d3c2;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+}
+#panorama-container #panorama-controls .panorama-overlay {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 500px;
+  margin-left: -250px;
+}
+#panorama-container #panorama-controls .panorama-overlay div {
+  display: none;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  padding: 20px;
+}
+#panorama-container #panorama-controls .panorama-overlay div#intro-text {
+  display: block;
+  text-align: center;
+}
+#panorama-container #panorama-controls .panorama-overlay div#intro-text h4, #panorama-container #panorama-controls .panorama-overlay div#intro-text p {
+  width: 100%;
+}
+#panorama-container #panorama-controls .panorama-overlay div h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 0 5px 0;
+  width: 400px;
+  float: left;
+  display: block;
+}
+#panorama-container #panorama-controls .panorama-overlay div p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  width: 400px;
+  float: left;
+  display: block;
+  letter-spacing: 1px;
+}
+#panorama-container #panorama-controls .panorama-overlay div a.goto-btn {
+  background: url("../img/explore/goto.png") no-repeat;
+  background-position: top center;
+  padding-top: 32px;
+  display: inline;
+  float: right;
+  width: 65px;
+  text-align: center;
+  margin: 0 10px 0 0;
+  color: #96601a;
+  font-size: 13px;
+  text-decoration: none;
+}
+#panorama-container #panorama-controls .panorama-overlay div a.goto-btn:hover {
+  text-decoration: underline;
+}
+
+.picture-explorer {
+  color: #e2d3c2;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  width: 100%;
+  min-height: 500px;
+  padding: 30px 0 40px;
+  background-color: #000;
+  background-image: url("../img/default-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+}
+.picture-explorer a {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.picture-explorer a img {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.picture-explorer a:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.picture-explorer a:hover {
+  color: #fff;
+}
+.picture-explorer h1 {
+  color: #fff;
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+
+.picture {
+  margin: 0 auto;
+  width: 1000px;
+  position: relative;
+}
+
+.picture-inner {
+  position: relative;
+}
+
+.interactive-painting {
+  display: block;
+  margin: auto;
+  position: relative;
+  border: 12px solid #b0916c;
+  -webkit-box-shadow: 0 1px 5px #888;
+  -moz-box-shadow: 0 1px 5px #888;
+  box-shadow: 0 1px 5px #888;
+  width: 660px;
+}
+.interactive-painting img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.interactive-painting .painting-detail {
+  display: none;
+}
+
+.picture-back {
+  background: url("../img/icons/room-icon.png") no-repeat 0 0;
+  color: inherit;
+  display: inline-block;
+  line-height: 13px;
+  padding: 3px 10px 7px 46px;
+  text-decoration: none;
+}
+
+.picture-control {
+  background: url("../img/sprite.png") no-repeat 0 0;
+  display: block;
+  margin: -30px 0 0 0;
+  position: absolute;
+  top: 50%;
+}
+.picture-control > img {
+  border: 3px solid;
+  color: #c7b299;
+  width: 45px;
+  margin: 8px 0;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.picture-control:hover > img {
+  color: #fff;
+}
+
+.picture-prev {
+  background-position: -10px -2046px;
+  left: 0;
+  padding: 0 0 0 30px;
+}
+
+.picture-next {
+  background-position: 56px -1918px;
+  right: 0;
+  padding: 0 30px 0 0;
+}
+
+.hotspot-content {
+  display: none;
+}
+
+.hotspot, .hotspot-icon {
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -10px -492px;
+  display: block;
+  height: 62px;
+  opacity: 1;
+  position: absolute;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  width: 62px;
+  margin-top: -31px;
+  margin-left: -31px;
+}
+
+.interactive-painting .hotspot {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.interactive-painting .hotspot.knockback {
+  -webkit-opacity: 0.7 !important;
+  -moz-opacity: 0.7 !important;
+  opacity: 0.7 !important;
+}
+.interactive-painting .hotspot.knockback:hover {
+  -webkit-opacity: 1 !important;
+  -moz-opacity: 1 !important;
+  opacity: 1 !important;
+}
+
+.hotspot-artist {
+  background-position: -10px -12px;
+}
+
+.hotspot-person {
+  background-position: -10px -333px;
+}
+
+.hotspot-action {
+  background-position: -10px -492px;
+}
+
+.hotspot-fleet {
+  background-position: -10px -172px;
+}
+
+.picture-meta {
+  text-align: left;
+  width: 660px;
+  margin: 0 auto;
+}
+
+.picture-icon-keys {
+  list-style: none;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+.icon-key {
+  display: inline-block;
+  margin: 0 17px 0 0;
+}
+
+.icon-key-commentary {
+  margin: 0 23px 0 0;
+}
+
+.icon-key-action {
+  margin: 0 25px 0 0;
+}
+
+.icon-key-fleet {
+  margin: 0;
+}
+
+.icon-key-zoom {
+  float: right;
+  margin: 0;
+}
+
+.picture-zoom {
+  color: #e2d3c2;
+}
+
+.hotspot-zoom {
+  background-position: -6px -1580px;
+}
+
+.hotspot-small {
+  display: inline-block;
+  height: 32px;
+  margin: 0 2px 0 0;
+  opacity: 1;
+  position: static;
+  vertical-align: middle;
+  width: 32px;
+}
+.hotspot-small.hotspot-commentary {
+  background-position: -10px -651px;
+}
+.hotspot-small.hotspot-profile {
+  background-position: -10px -871px;
+}
+.hotspot-small.hotspot-action {
+  background-position: -10px -1002px;
+}
+.hotspot-small.hotspot-fleet {
+  background-position: -10px -763px;
+}
+
+/*# sourceMappingURL=explore.css.map */

@@ -1,0 +1,75 @@
+<krpano version="1.17">
+    
+    <view hlookat="0" vlookat="0" maxpixelzoom="3.0" fovmax="150" limitview="auto" />
+
+    <preview url="preview.jpg" />
+
+    <image>
+        <cube url="pano_%s.jpg" />
+        <mobile>
+            <cube url="mobile_%s.jpg" />
+        </mobile>
+    </image>
+
+    <view hlookat="20" vlookat="0" fovtype="MFOV" fov="110" fovmin="50" fovmax="120" />
+
+    <!-- hotspot style predefines - black hotspot -->
+    <style name="hotspot_painting"
+           url="hotspot.svg"
+           crop="0|0|40|40"
+           framewidth="40" frameheight="40" frame="0"
+           />
+
+    <!-- the 'tooltip' style - show tooltip textfield and update positions as long as hovering -->
+    <style name="tooltip"
+           onover="copy(layer[tooltip].html, tooltip);
+                   set(layer[tooltip].visible, true);
+                   tween(layer[tooltip].alpha, 1.0, 0.5);
+                   asyncloop(hovering, copy(layer[tooltip].x,mouse.stagex); copy(layer[tooltip].y,mouse.stagey); );"
+           onout="tween(layer[tooltip].alpha, 0.0, 0.25, default, set(layer[tooltip].visible,false), copy(layer[tooltip].x,mouse.stagex); copy(layer[tooltip].y,mouse.stagey); );"
+           />
+
+    <!-- the 'tooltip' textfield -->
+    <layer name="tooltip" keep="true"
+           url="%SWFPATH%/plugins/textfield.swf"
+           parent="STAGE"
+           visible="false" alpha="0"
+           enabled="false"
+           align="lefttop"
+           edge="bottom"
+           oy="-2"
+           width="90"
+           autoheight="true"
+           background="true" backgroundcolor="0xFFFFFF" backgroundalpha="0.7"
+           border="false" bordercolor="0x000000" borderalpha="1.0"
+           borderwidth="1.0" roundedge="10"
+           shadow="0.0" shadowrange="4.0" shadowangle="45" shadowcolor="0x000000" shadowalpha="1.0"
+           textshadow="0" textshadowrange="6.0" textshadowangle="90" textshadowcolor="0x000000" textshadowalpha="0"
+           css="text-align:center; color:#333; font-family:Arial; font-size:14px; margin-top: 40px;"
+           html=""
+           />
+    
+    
+    <!-- Painting hotspot -->
+    <hotspot name="painting1" style="hotspot_painting|tooltip" tooltip="click to view" ath="-122" atv="-20" onclick="js(Armada.Panorama.viewPainting(1));" onhover="js(Armada.Panorama.hotspotHover())" onout="js(Armada.Panorama.hotspotHover())"/>
+    <hotspot name="painting2" style="hotspot_painting|tooltip" tooltip="click to view" ath="-83" atv="-31"  onclick="js(Armada.Panorama.viewPainting(2));" onhover="js(Armada.Panorama.hotspotHover())" onout="js(Armada.Panorama.hotspotHover())"/>
+    <hotspot name="painting3" style="hotspot_painting|tooltip" tooltip="click to view" ath="-30" atv="-26"  onclick="js(Armada.Panorama.viewPainting(3));" onhover="js(Armada.Panorama.hotspotHover())" onout="js(Armada.Panorama.hotspotHover())"/>
+    <hotspot name="painting4" style="hotspot_painting|tooltip" tooltip="click to view" ath="+72" atv="-26"  onclick="js(Armada.Panorama.viewPainting(4));" onhover="js(Armada.Panorama.hotspotHover())" onout="js(Armada.Panorama.hotspotHover())"/>
+    <hotspot name="painting5" style="hotspot_painting|tooltip" tooltip="click to view" ath="+128" atv="-31" onclick="js(Armada.Panorama.viewPainting(4));" onhover="js(Armada.Panorama.hotspotHover())" onout="js(Armada.Panorama.hotspotHover())"/>
+    <hotspot name="painting6" style="hotspot_painting|tooltip" tooltip="click to view" ath="+166" atv="-20" onclick="js(Armada.Panorama.viewPainting(4));" onhover="js(Armada.Panorama.hotspotHover())" onout="js(Armada.Panorama.hotspotHover())"/>
+
+    <!-- Room hotspots -->
+    <hotspot name="hotspot1" style="hotspot_painting|tooltip" tooltip="click to view" ath="+127" atv="-9" onclick="js(Armada.Panorama.showHotspotOverlay(1));" onhover="js(Armada.Panorama.hotspotHover())" />
+    <hotspot name="hotspot2" style="hotspot_painting|tooltip" tooltip="click to view" ath="-83" atv="-21" onclick="js(Armada.Panorama.showHotspotOverlay(2));" onhover="js(Armada.Panorama.hotspotHover())" />
+    <hotspot name="hotspot3" style="hotspot_painting|tooltip" tooltip="click to view" ath="+52" atv="+20" onclick="js(Armada.Panorama.showHotspotOverlay(3));" onhover="js(Armada.Panorama.hotspotHover())" />
+    <hotspot name="hotspot4" style="hotspot_painting|tooltip" tooltip="click to view" ath="+89" atv="+28" onclick="js(Armada.Panorama.showHotspotOverlay(4));" onhover="js(Armada.Panorama.hotspotHover())" />
+    <hotspot name="hotspot5" style="hotspot_painting|tooltip" tooltip="click to view" ath="-126" atv="+17" onclick="js(Armada.Panorama.showHotspotOverlay(5));" onhover="js(Armada.Panorama.hotspotHover())"  />
+    <hotspot name="hotspot6" style="hotspot_painting|tooltip" tooltip="click to view" ath="+77" atv="+26" onclick="js(Armada.Panorama.showHotspotOverlay(6));" onhover="js(Armada.Panorama.hotspotHover())" />
+    <hotspot name="hotspot7" style="hotspot_painting|tooltip" tooltip="click to view" ath="+72" atv="+35" onclick="js(Armada.Panorama.showHotspotOverlay(7));" onhover="js(Armada.Panorama.hotspotHover())" />
+    <hotspot name="hotspot8" style="hotspot_painting|tooltip" tooltip="click to view" ath="-85" atv="+52" onclick="js(Armada.Panorama.showHotspotOverlay(8));" onhover="js(Armada.Panorama.hotspotHover())" />
+    <hotspot name="hotspot9" style="hotspot_painting|tooltip" tooltip="click to view" ath="+22" atv="-5" onclick="js(Armada.Panorama.showHotspotOverlay(9));" onhover="js(Armada.Panorama.hotspotHover())" />
+
+    <contextmenu fullscreen="false">
+    </contextmenu>
+
+</krpano>

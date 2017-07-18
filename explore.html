@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Armada Tapestries</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='assets/fonts/novecento.css' rel='stylesheet' type='text/css'>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/css/libraries/slick.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/lightbox.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/audioplayer.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/animate.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/jquery.fs.ranger.min.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/magnific.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/jquery-ui.css" media="all">
+        <link rel="stylesheet" href="assets/css/main.css" media="all">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="overlay">
+                <div class="modal" id="zoom-overlay">
+                    <a href="javascript:Armada.Overlay.hide();" class="close-btn"><img src="assets/img/icons/close-dark.png" alt="close window"></a>
+                    <div id="zoom-overlay-content">
+
+                    </div>
+                </div>
+            </div>
+            <div id="header">
+                <div class="container" id="top">
+                    <h1 id="logo"><a href="index.html"><img src="assets/img/logo.png" alt="Armada Tapestries" /></a></h1>
+
+                    <ul id="main-navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="painting-process.html">Painting Process</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+<script src="assets/js/libraries/krpano/krpano.js"></script>
+
+<div id="main-content" class="spacer">
+    <div id="panorama-container">
+        <div id="panorama"><!-- Panorama created here --></div>
+        <div id="panorama-controls">
+            <a href="javascript:Armada.Panorama.hideOverlays();" class="close-btn">Hide information</a>
+            <div class="panorama-overlay">
+                <div id="intro-text">
+                    <h4>Click and drag to explore the room</h4>
+                    <p>Click on the hotspots for more information.</p>
+                </div>
+                <div id="painting-1">
+                    <h4>The discovery of the spanish fleet opposite the lizard</h4>
+                    <a href="the-discovery-of-the-spanish-fleet-opposite-the-lizard.html" class="goto-btn">See full information</a>
+                </div>
+                <div id="painting-2">
+                    <h4>The English fleet pursuing the Spanish fleet against Fowey</h4>
+                    <a href="the-english-fleet-pursuing-the-spanish-fleet-against-fowey.html" class="goto-btn">See full information</a>
+                </div>
+                <div id="painting-3">
+                    <h4>Drake takes De Valdes Galleon the Lord Admiral pursues the enemy</h4>
+                    <a href="drake-takes-de-valdes-galleon-the-lord-admiral-pursues-the-enemy.html" class="goto-btn">See full information</a>
+                </div>
+                <div id="painting-4">
+                    <h4>The engagement of both fleets against the isle of Portland</h4>
+                    <a href="the-engagement-of-both-fleets-against-the-isle-of-portland.html" class="goto-btn">See full information</a>
+                </div>
+                <div id="painting-5">
+                    <h4>The sharpest engagement against the Isle of Wight</h4>
+                    <a href="the-sharpest-engagement-against-the-isle-of-wight.html" class="goto-btn">See full information</a>
+                </div>
+                <div id="painting-6">
+                    <h4>English fireships dislodge the Spanish fleet before Calais</h4>
+                    <a href="english-fireships-dislodge-the-spanish-fleet-before-calais.html" class="goto-btn">See full information</a>
+                </div>
+            </div>
+            <div class="controls-360">
+                <h3>360 Controls</h3>
+                <ul class="controls">
+                    <li><a href="javascript:Armada.Panorama.turn('left');"><img src="assets/img/icons/arrow-left.png" alt="Left" title="Look left"></a></li>
+                    <li><a href="javascript:Armada.Panorama.turn('right');"><img src="assets/img/icons/arrow-right.png" alt="Right" title="Look right"></a></li>
+                    <li><a href="javascript:Armada.Panorama.tilt('up');"><img src="assets/img/icons/arrow-up.png" alt="Up" title="Look up"></a></li>
+                    <li><a href="javascript:Armada.Panorama.tilt('down');"><img src="assets/img/icons/arrow-down.png" alt="Down" title="Look down"></a></li>
+                    <li><a href="javascript:Armada.Panorama.zoom('in');"><img src="assets/img/icons/zoom-in.png" alt="Zoom in" title="Zoom in"></a></li>
+                    <li><a href="javascript:Armada.Panorama.zoom('out');"><img src="assets/img/icons/zoom-out.png" alt="Zoom out" title="Zoom out"></a></li>
+                </ul>
+            </div>
+            <div class="controls-points-of-interest">
+                <h3>Paintings</h3>
+                <ul class="paintings">
+                    <li>
+                        <a href="javascript:Armada.Panorama.lookAtPicture(1);">
+                            <img src="assets/img/paintings/the-discovery-of-the-spanish-fleet-opposite-the-lizard-small.jpg"
+                                 alt="The discovery of the spanish fleet opposite the lizard">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:Armada.Panorama.lookAtPicture(2);">
+                            <img src="assets/img/paintings/the-english-fleet-pursuing-the-spanish-fleet-against-fowey-small.jpg"
+                                 alt="The English fleet pursuing the Spanish fleet against Fowey">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:Armada.Panorama.lookAtPicture(3);">
+                            <img src="assets/img/paintings/drake-takes-de-valdes-galleon-the-lord-admiral-pursues-the-enemy-small.jpg"
+                                 alt="Drake takes De Valdes Galleon the Lord Admiral pursues the enemy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:Armada.Panorama.lookAtPicture(4);">
+                            <img src="assets/img/paintings/the-engagement-of-both-fleets-against-the-isle-of-portland-small.jpg"
+                                 alt="The engagement of both fleets against the isle of Portland">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:Armada.Panorama.lookAtPicture(5);">
+                            <img src="assets/img/paintings/the-sharpest-engagement-against-the-isle-of-wight-small.jpg"
+                                 alt="The sharpest engagement against the Isle of Wight">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:Armada.Panorama.lookAtPicture(6);">
+                            <img src="assets/img/paintings/english-fireships-dislodge-the-spanish-fleet-before-calais-small.jpg"
+                                 alt="English fireships dislodge the Spanish fleet before Calais">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hotspot-content">
+        <div id="hotspot-content-1">
+            <div class="princes-chamber-detail" id="princes-chamber-detail-1">
+                <div class="media-wrapper">
+                    <div class="media">
+                        <img src="assets/img/hotspots/A.1.jpg"/>
+                        <audio data-startat="0">
+                            <source src="assets/audio/paintings/mp3/EA-H1_Six_large_rectangular.mp3">
+                            <source src="assets/audio/paintings/aif/EA-H1_Six_large_rectangular.aif">
+                        </audio>
+                    </div>
+                </div>
+                <div class="copy-wrapper">
+                    <h2>Decorating the Prince's Chamber
+                        <div class="hotspot-icon hotspot-artist"></div>
+                    </h2>
+                    <div>
+                        Art on the theme of Tudor history was planned for this room. Empty compartments designed for the Spanish Armada paintings were decorated with wallpaper by Augustus Welby Pugin (1812-1852). By juxtaposing the statue of Queen Victoria with portraits and scenes from the Elizabethan age, the scheme illustrates the 16th century origins of the 19th century nation's prosperity and power.
+                    </div>
+                    <div class="audio-transcript">
+                        <h2>Audio transcript</h2>
+                        Six large rectangular spaces had been waiting for over 150 years to be filled with paintings, reproducing the compositions of the original tapestries. These were commissioned by the admiral of the English Fleet, Lord Howard of Effingham and completed about 10 years after the Spanish Armada conflict.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hotspot-content-2">
+            <div class="princes-chamber-detail" id="princes-chamber-detail-2">
+                <div class="media-wrapper">
+                    <div class="media">
+                        <img src="assets/img/hotspots/A.2.jpg"/>
+                        <audio>
+                            <source src="assets/audio/paintings/mp3/EA-H2_One_painting_had_been_completed.mp3">
+                            <source src="assets/audio/paintings/aif/EA-H2_One_painting_had_been_completed.aif">
+                        </audio>
+                    </div>
+                </div>
+                <div class="copy-wrapper">
+                    <h2>Armada paintings
+                        <div class="hotspot-icon hotspot-artist"></div>
+                    </h2>
+                    <small>Oil and gilding on canvas.</small>
+                    <div>
+                        This scene, 'The English Pursuing the Spanish Fleet against Fowey' by Richard Burchett, dates to the late 1850s, but was not installed until 2010.
+                    </div>
+                    <div class="audio-transcript">
+                        <h2>Audio transcript</h2>
+                        One painting had been completed in the late 1850s by Richard Burchett, but the project to complete all six, initiated by Prince Albert was never completed at the time.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="hotspot-content-3">
+            <div class="princes-chamber-detail" id="princes-chamber-detail-3">
+                <div class="media-wrapper">
+                    <div class="media">
+                        <img src="assets/img/hotspots/A.3.jpg"/>
+                    </div>
+                </div>
+                <div class="copy-wrapper">
+                    <h2>Portrait sources
+                        <div class="hotspot-icon hotspot-artist"></div>
+                    </h2>
+                    <div>
+                        This depiction of Queen Katherine Parr (1512-1548) copies a painting now in the National Portrait Gallery. Before that institution was established in 1856, finding genuine likenesses of historic figures was a challenge. Peers helped by making paintings from their collections available for copying. The new series was painted on panel by Burchett's students from the Royal School of Arts (now the Royal College of Art).
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hotspot-content-4">
+            <div class="princes-chamber-detail" id="princes-chamber-detail-4">
+                <div class="media-wrapper">
+                    <div class="media">
+                        <img src="assets/img/hotspots/A.4.jpg"/>
+                    </div>
+                </div>
+                <div class="copy-wrapper">
+                    <h2>Elizabeth I
+                        <div class="hotspot-icon hotspot-person"></div>
+                    </h2>
+                    <small>Oil painting on panel by studio of Richard Burchett, 1854-60.</small>
+                    <div>
+                        Queen Elizabeth I (1533-1603) reigned for over 44 years. She was beset by threats to her authority, but survived them owing to her sharp intelligence and skill as a diplomat and leader. The Spanish Armada of 1588 was one of many attempts by Catholic Spain to depose her Protestant rule.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hotspot-content-5">
+            <div class="princes-chamber-detail" id="princes-chamber-detail-5">
+                <div class="media-wrapper">
+                    <div class="media">
+                        <img src="assets/img/hotspots/A.5.jpg"/>
+                    </div>
+                </div>
+                <div class="copy-wrapper">
+                    <h2>Mary of Scots
+                        <div class="hotspot-icon hotspot-person"></div>
+                    </h2>
+                    <small>Oil painting on panel by studio of Richard Burchett, 1845-60</small>
+                    <div>
+                        Mary Queen of Scots (1542-1587) was Elizabeth I's second cousin and viewed by Catholics as the rightful ruler of England. Deposed from the Scottish throne in 1567, Mary was imprisoned in England and became the focus of Catholic plots. Elizabeth immediately regretted authorising Mary's execution in 1587, and the event incensed Philip II.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hotspot-content-6">
+            <div class="princes-chamber-detail" id="princes-chamber-detail-6">
+                <div class="media-wrapper">
+                    <div class="media">
+                        <img src="assets/img/hotspots/A.6.jpg"/>
+                    </div>
+                </div>
+                <div class="copy-wrapper">
+                    <h2>Philip II
+                        <div class="hotspot-icon hotspot-person"></div>
+                    </h2>
+                    <small>Oil painting on panel by studio of Richard Burchett, 1854-60.</small>
+                    <div>
+                        King Philip II of Spain (1527-1598) appears in the Prince's Chamber because of his marriage to Queen Mary I of England (1516-1558), Elizabeth I's older half-sister. He hoped to reinstate Catholicism in England. Another aim was to stop Elizabeth thwarting his commercial and political power through piracy and her support of rebels in the Netherlands.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hotspot-content-7">
+            <div class="princes-chamber-detail" id="princes-chamber-detail-7">
+                <div class="media-wrapper">
+                    <div class="media">
+                        <img src="assets/img/hotspots/A.7.jpg"/>
+                    </div>
+                </div>
+                <div class="copy-wrapper">
+                    <h2>Queen Elizabeth I knighting Drake
+                        <div class="hotspot-icon hotspot-action"></div>
+                    </h2>
+                    <small>Bronze bas relief by William Theed the Younger, about 1855.</small>
+                    <div>
+                        Elizabeth I knighted Francis Drake (1540-1596) in 1581 aboard the <em>Golden Hind</em>. The occasion took place six months after he became the first captain to circumnavigate the globe. During that voyage Drake seized ships and raided ports in acts of piracy against the Spanish and Portuguese. On his return he shared his riches with the queen. Drake became an MP for constituencies including Bossiney and Plymouth.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hotspot-content-8">
+            <div class="princes-chamber-detail" id="princes-chamber-detail-8">
+                <div class="media-wrapper">
+                    <div class="media">
+                        <img src="assets/img/hotspots/A.8.jpg"/>
+                    </div>
+                </div>
+                <div class="copy-wrapper">
+                    <h2>Queen Victoria
+                        <div class="hotspot-icon hotspot-person"></div>
+                    </h2>
+                    <small>Marble sculpture by John Gibson, 1855.</small>
+                    <div>
+                        Queen Victoria (1819-1901) – here flanked by figures of Justice and Clemency – reigned from 1837 to 1901. In 1840 she married Prince Albert of Saxe-Coburg and Gotha. From 1841 until his death in 1861 he chaired the Royal Fine Arts Commission, responsible for selecting the artwork for the new Palace of Westminster.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hotspot-content-9">
+            <div class="princes-chamber-detail" id="princes-chamber-detail-9">
+                <div class="media-wrapper">
+                    <div class="media">
+                        <img src="assets/img/hotspots/A.9.jpg"/
+                    </div>
+                </div>
+                <div class="copy-wrapper">
+                    <h2>Artists and sculptors
+                        <div class="hotspot-icon hotspot-person"></div>
+                    </h2>
+                    <small>Richard Burchett, wood engraving after an unknown artist, published 1875, © National Portrait Gallery, London</small>
+                    <div>
+                        Artists who contributed to the Prince's Chamber included John Gibson (about 1790-1866), sculptor of the statue of Queen Victoria. His former assistant William Theed (1764-1817) was responsible for the bas reliefs of Tudor scenes. Richard Burchett (1815-1875) was the chief painter and author of the first Armada picture. He supervised his team of art students in copying the 16th century portraits. Their names are not known, but he trained successful artists such as Sir George Clausen (1852-1944), Kate Greenaway (1846-1901), Gertrude Jekyll (1843-1932) and Sir Luke Fildes (1844-1927).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="simple-content">
+        <div class="masthead thin-container">
+            <h2><img src="assets/img/flourish.png"> The Princes Chamber <img src="assets/img/flourish.png"></h2>
+            <h3>&#8220;And it's relationship to the tapestries&#8221;</h3>
+            <p>Belonging to the State Apartments, the Prince's Chamber is the anteroom to the House of Lords. The Monarch passes through here at the State Opening of Parliament.</p>
+        </div>
+    </div>
+
+    <div class="homepage-bottom-content">
+        <div class="container column-container homepage-columns">
+            <div class="column three first">
+                <a href="timeline.html">
+                    <div class="text-content">
+                        <h2>Discover the History</h2>
+                        <h3>view the interactive timeline</h3>
+                        <img src="assets/img/flourish.png">
+                    </div>
+                    <img src="assets/img/homepage/discover-the-history.jpg" alt="Discover the history" class="hero">
+                </a>
+            </div>
+            <div class="column three">
+                <a href="painting-process.html">
+                    <div class="text-content">
+                        <h2>Meet the artists</h2>
+                        <h3>view their painting process</h3>
+                        <img src="assets/img/flourish.png">
+                    </div>
+                    <img src="assets/img/homepage/meet-the-artists.jpg" alt="Meet the artists" class="hero">
+                </a>
+                <div class="left-border"></div>
+                <div class="right-border"></div>
+            </div>
+            <div class="column three end last">
+                <a href="https://www.youtube.com/watch?v=lIBIGQvvu9I" class="popup-video" target="_blank">
+                    <div class="text-content">
+                        <h2>Watch the video</h2>
+                        <h3>The complete story</h3>
+                        <img src="assets/img/flourish.png">
+                    </div>
+                    <img src="assets/img/homepage/watch-the-videos.jpg" alt="Watch the video" class="hero">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="push"></div>
+        </div><!-- /#wrapper -->
+        <div id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <ul class="column">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="painting-process.html">Painting Process</a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="credits.html">Credits</a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><a href="mailto:curator@parliament.uk">Contact</a></li>
+                        <li><a href="http://www.parliament.uk/art">View more House of Lords Artwork</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <span>&copy; 2015 House of Lords</span><img src="assets/img/house-of-lords.jpg">
+                    <span style="float: right;">Site by <a href="http://www.studio24.net">Studio24</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Libraries -->
+        <script src="assets/js/libraries/jquery.min.js"></script>
+        <script src="assets/js/libraries/jquery.nav.js"></script>
+        <script src="assets/js/libraries/jquery.slick.min.js"></script>
+        <script src="assets/js/libraries/jquery.audioplayer.min.js"></script>
+        <script src="assets/js/libraries/jquery.lightbox.min.js"></script>
+        <script src="assets/js/libraries/jquery.viewportchecker.js"></script>
+        <script src="assets/js/libraries/jquery.panzoom.min.js"></script>
+        <script src="assets/js/libraries/magnific.js"></script>
+        <script src="assets/js/libraries/jquery-ui.min.js"></script>
+
+        <!-- Our Code -->
+        <script src="assets/js/lib.min.js"></script>
+        <script src="assets/js/main.min.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-51081446-1', 'parliament.uk');
+            ga('send', 'pageview');
+        </script>
+
+<script>
+    window.onload = function() {
+        embedpano({swf:"assets/js/libraries/krpano/krpano.swf", xml:"assets/img/panorama/krpano.xml", target:"panorama", html5:"prefer", wmode: "opaque", passQueryParameters:true});
+        Armada.Panorama.init("pano");
+    };
+</script>
+
+    </body>
+</html>

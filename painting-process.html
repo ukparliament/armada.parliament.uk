@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Armada Tapestries</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='assets/fonts/novecento.css' rel='stylesheet' type='text/css'>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/css/libraries/slick.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/lightbox.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/audioplayer.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/animate.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/jquery.fs.ranger.min.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/magnific.css" media="all">
+        <link rel="stylesheet" href="assets/css/libraries/jquery-ui.css" media="all">
+        <link rel="stylesheet" href="assets/css/main.css" media="all">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div class="overlay">
+                <div class="modal" id="zoom-overlay">
+                    <a href="javascript:Armada.Overlay.hide();" class="close-btn"><img src="assets/img/icons/close-dark.png" alt="close window"></a>
+                    <div id="zoom-overlay-content">
+
+                    </div>
+                </div>
+            </div>
+            <div id="header">
+                <div class="container" id="top">
+                    <h1 id="logo"><a href="index.html"><img src="assets/img/logo.png" alt="Armada Tapestries" /></a></h1>
+
+                    <ul id="main-navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="painting-process.html">Painting Process</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                    </ul>
+                </div>
+            </div>
+
+<div class="sub-navigation-wrapper painting-process">
+    <div id="sub-navigation">
+        <div class="container">
+            <ul>
+                <li class="first"><a href="#top"><img src="assets/img/green-arrow-up.png" class="arrow"></a></li>
+                <li><a href="#the-studio">The Studio</a></li>
+                <li><a href="#artist-team">Artist Team</a></li>
+                <li><a href="#inspiration">Inspiration</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#colour">Colour</a></li>
+                <li><a href="#scaling-up">Scaling up</a></li>
+                <li><a href="#main-image">Main Image</a></li>
+                <li><a href="#borders">Borders</a></li>
+                <li><a href="#portraits">Portraits</a></li>
+                <li><a href="#the-complete-series" class="end">The complete series</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="main-content" class="painting-process-page">
+    <div class="container">
+        <div id="timeline"></div>
+    </div>
+    <div class="component masthead-component light-grey-gradient" id="the-painting-process">
+        <div class="container hidden">
+            <img src="assets/img/painting-process/mastheadnew.jpg" class="masthead-image">
+            <div class="text-container">
+                <h2><img src="assets/img/flourish.png"> The painting process <img src="assets/img/flourish.png"></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="component light-grey">
+        <div class="container intro-text">
+            <p>A generous donation in 2007 enabled the completion of the 1860s cycle of Armada paintings for the House of Lords. Artist Anthony Oakshett led a talented team in researching, scaling-up and painting five large canvases in oils. It was an extraordinary achievement.</p>
+        </div>
+    </div>
+
+    <!-- Video Diary -->
+    <div class="component hidden video-component painting-process" id="video-diary">
+        <div class="thin-container">
+            <h2>Video diary <img src="assets/img/flourish.png"></h2>
+            <div class="left-side">
+                <div class="video-container">
+                    <a href="https://www.youtube.com/watch?v=kECRHZWEifg" class="popup-video" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/painting-process/video-placeholder.jpg" />
+                        </div>
+                        <h3>Film 4: Painting Process</h3>
+                        <p>Anthony Oakshett explains how he organised the painting project, from research and planning to scaling up the design and preparation of materials.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="video-container">
+                    <a href="https://www.youtube.com/watch?v=UFCLU-e_mO4" class="popup-video" target="_blank">
+                        <div class="image-wrapper">
+                            <img src="assets/img/painting-process/Video-Painting-Brushes-down.jpg" />
+                        </div>
+                        <h3>Film 5: Brushes Down</h3>
+                        <p>While Anthony Oakshett adds final details to the paintings, specialist art handlers carefully pack the works and load them onto a lorry.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Studio -->
+    <div class="component hidden large-carousel-component white" id="the-studio">
+        <div class="thin-container">
+            <div class="carousel" id="carousel-the-studio">
+                <div class="controls">
+                    <div class="title-container">
+                        <h2><img src="assets/img/flourish.png"> The Studio <img src="assets/img/flourish.png"></h2>
+                        <h3>&#8220;Setting up the studio at Wrest Park&#8221;</h3>
+                    </div>
+
+                    <div class="side-navigation" data-carousel="carousel-the-studio">
+                        <h4>The studio</h4>
+                        <ul>
+                            <li><a href="#" data-slide="1">Anthony Oakshett</a></li>
+                            <li><a href="#" data-slide="2">Setting up the Studio at Wrest Park</a></li>
+                            <li><a href="#" data-slide="3">In the Studio</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="assets/img/painting-process/the-studio.jpg">
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/28.jpg" class="popup-image" title="The lead artist, Anthony Oakshett."><img src="assets/img/painting-process/small/28.jpg" alt="The lead artist, Anthony Oakshett"></a>
+                    </div>
+                    <div class="right-side">
+                        <h4>Anthony Oakshett</h4>
+                        <p>Lead artist Anthony Oakshett was ideally placed to succeed in the ambitious Armada Paintings project. An experienced observational painter and portraitist. He also had previous experience working on a large scale. His skill as an expert copyist of historic paintings gave him the visual acuity needed to respond to Richard Burchett’s style. His training as an art historian was invaluable, too, in researching missing details about the appearance of English and Spanish ships. Anthony Oakshett gives a flavour of the unique challenges of the project, commenting on his thought processes over the portrait heads in the decorative borders:</p>
+                        <p><i>"While painting these portraits, I often reflected that I was a twenty-first century artist, creating portraits of sixteenth century men, in the style of a nineteenth century artist, based on eighteenth century engravings."</i></p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/T25-01.jpg" class="popup-image"><img src="assets/img/painting-process/large/T25-01.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h4>Setting up the Studio at Wrest Park </h4>
+                        <p>The first practical challenge of the Armada Paintings Project was to find a studio space big enough to accommodate the six sizeable canvases together. After extensive searches an industrial building was identified in the grounds of Wrest Park, an 1830s country house set in important gardens dating from the 17th century, and managed by English Heritage.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/25.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/2.jpg" class="popup-image"><img src="assets/img/painting-process/large/2.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h4>In the Studio</h4>
+                        <p>As the project progressed, it was important for the artists to be able to compare their own work with Richard Burchett’s painting of the late 1850s, so the new canvases were arranged around his picture to make this possible.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/25a.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png">Audio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Artist Team -->
+    <div class="component hidden large-carousel-component light-grey" id="artist-team">
+        <div class="thin-container">
+            <div class="carousel" id="carousel-artist-team">
+                <div class="controls">
+                    <div class="title-container">
+                        <h2><img src="assets/img/flourish.png"> Artist Team <img src="assets/img/flourish.png"></h2>
+                        <h3>&#8220;Setting up the studio at Wrest Park&#8221;</h3>
+                    </div>
+
+                    <div class="side-navigation" data-carousel="carousel-artist-team">
+                        <h4>The artist's team</h4>
+                        <ul>
+                            <li><a href="#" data-slide="1">Choosing the artists </a></li>
+                            <li><a href="#" data-slide="2">Working together</a></li>
+                            <li><a href="#" data-slide="3">Artists reflections</a></li>
+                            <li><a href="#" data-slide="4">Bill Clibery</a></li>
+                            <li><a href="#" data-slide="5">Colin Failes</a></li>
+                            <li><a href="#" data-slide="6">Ruijun Hu</a></li>
+                            <li><a href="#" data-slide="7">Alessia Jones</a></li>
+                            <li><a href="#" data-slide="8">Robin Dixon</a></li>
+                            <li><a href="#" data-slide="9">Emily Harnett</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="slide bottom-crop">
+                    <img src="assets/img/painting-process/the-studio-1.jpg">
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/T26-01.jpg" class="popup-image"><img src="assets/img/painting-process/large/T26-01.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h4>Choosing the artists</h4>
+                        <p>Anthony Oakshett selected a team of artists who had the skills to carry out this mammoth project.   The expertise needed included computer design, good observational drawing ability and sensitivity to colour and materials. The artists he chose are listed here in the order in which they joined the project.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/26.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/T22-01.jpg" class="popup-image"><img src="assets/img/painting-process/large/T22-01.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h4>Working together</h4>
+                        <p>Anthony Oakshett broke the tasks down into stages, so that several artists were at work on each painting. This collaborative system was similar to the historic studio, where an established artist employed and trained assistants. During the Armada Paintings project, all the artists shared challenges, learning new approaches from each other in a dynamic and collaborative way.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/22.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <img src="assets/img/painting-process/decorative-borders.jpg" alt="Bill at work">
+                    </div>
+                    <div class="right-side">
+                        <h4>Artists reflections</h4>
+                        <p>Bill Clibery’s skills were key to enlarging the tiny engraved designs onto massive canvases. He says, ‘Although there were challenges; these were approached with a troubleshooting attitude that made the process enjoyable…in beginning to translate the Pine engravings to linear plans at the correct scale, the level of detail to be cleaned up and added became apparent, and the stamina we were to need...one of the best moments was sitting back at my desk and viewing the completion of the first digital linear plan, seeing the overall composition, and being able to imagine the finished work.’.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/33.jpg" class="popup-image"><img src="assets/img/painting-process/small/33.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h4>Bill Clibery</h4>
+                        <p>Bill Clibery brought an understanding of new and old art techniques to the Armada Project. He was a sculptor’s assistant working on church and public commissions, and trained as a digital graphic designer at Central St Martin’s in London, practising in publicity and urban design. Inspired by David Hockney’s book, ‘Secret Knowledge’ – about how Old Masters used up to date technologies to make accurate likeness – he began to use software to combine handmade drawings with digital structures. </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/34.jpg" class="popup-image"><img src="assets/img/painting-process/small/34.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h4>Colin Failes</h4>
+                        <p>A specialist muralist and trompe l’oeil painter for over 20 years before the Armada Project, Colin Failes is adept at both large scale and detailed work. He began as an apprentice engineering draughtsman, was assistant to a portrait and landscape painter, then studied at the City and Guilds Art School, and qualified as a postgraduate at the Royal Academy of Arts in London. He was a tutor at Harrow College of Art.</p>
+                        <p>A team member throughout the project, Colin Failes collaborated on the paintings’ borders with Anthony Oakshett and Ruijun Hu, but the large coats of arms fell to him alone. They were ‘a challenge’, he says as, ‘all five had to be identical and match the one in the Burchett painting…about 35 cm x 65 cm…much of the detail was done using a head mounted magnifying glass.’ Then in the final stages he, ‘did miles and miles of rigging, and countless flags and pennants on the ships’.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/35.jpg" class="popup-image"><img src="assets/img/painting-process/small/35.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h4>Ruijun Hu</h4>
+                        <p>Initially a professional opera flautist, Ruijun Hu became fascinated by western painting as an undergraduate in Lanzhou, capital of the Chinese province of Gansu. His work for the Armada Project won much media attention in China, and acclaim from the art sector. Ruijun has exhibited in the first UK Biennial exhibition of Chinese artists in London and in a solo show at the Gu Yuan Museum of Art, Zhu Hai, China.</p>
+                        <p>As a painter in the studio for the entire two years, Ruijun Hu was involved in the whole process, from tracing images to glazing the completed paintings. He reflects, ‘The Armada Project’s immense scale meant that it was impossible for any single artist to complete; therefore, teamwork was extremely important’, and remembers Anthony Oakshett as an ‘outstanding’ leader, providing ‘meticulous preparation coupled with efficient working arrangements. The artists ‘all respected each other’s working methods, exchanging ideas until we had mutual understanding’, and became good friends. </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/36.jpg" class="popup-image"><img src="assets/img/painting-process/small/36.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h4>Alessia Jones</h4>
+                        <p>After training in Fine Art at Goldsmith’s College London, Alessia Jones settled in Cornwall where she painted and taught. A versatile artist in many media from print to textiles, her main focus is observational drawing and painting.</p>
+                        <p>Alessia Jones describes working on one of the massive paintings, ‘Sitting on planks of wood high above the ground with my palette, paintbrushes, linseed oil and a cup of tea was a bit like being in a little nest’. Then, ‘When it came to painting the boats they took many layers of paint to realise. I painted around six on each before Anthony would add all the finest details, glazes and scumbling. I remember the precision with which each cannon was spaced and measured: it was painstaking.’ Alessia was involved in the project for four months and remembers it fondly.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/37.jpg" class="popup-image"><img src="assets/img/painting-process/small/37.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h4>Robin Dixon</h4>
+                        <p>Trained at Nene College Northampton and Maidstone College of Art, Robin Dixon set up an artists’ studio in Bradford, later taking up art-related jobs in London and painting. He was included in the Jerwood Contemporary Painters exhibition. Oils are Robin’s preferred medium, and he has worked on a large scale, so was undaunted when he joined midway through the Armada Project.</p>
+                        <p>Using computer screens up scaffolding, Robin Dixon recalls, ‘meant that we could refer to the particular photographs of each sequence of the existing border without moving from the task in hand’. He says, ‘developing some parts was particularly satisfying, such as the frames for the portraits. When we put the second coat on, [they] looked amazingly three-dimensional. I remember sometimes feeling a real sense of achievement at having progressed another foot or two along the border. What impressed me at the end was the way the paintings had a visually unified feel…the cumulative power of all the elements involved in the paintings.’.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/38.jpg" class="popup-image"><img src="assets/img/painting-process/small/38.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h4>Emily Harnett</h4>
+                        <p>Inspired to become an artist by her mother’s practice, Emily Harnett studied at St Ives and has trained in painting, pottery, weaving and yoga, then specialising in art performance and design. In a diverse career, she has contributed to the Feme Fuse event in Cornwall, staged a solo exhibition ‘The Lioness, Woman and the Wardrobe’ and designed costumes for the dance company Shallal.</p>
+                        <p>During her four months on the project, Emily Harnett recalls, ‘the location was beautiful and inspiring. Wrest Park in winter, an empty country garden. A lunchtime walk kept a fresh and clear approach to painting.’ Working with Alessia on two blank canvases, ‘we used the ready mixed palette of oils matched to the Burchett painting and gradually built up about four layers on the water and land sections’. ‘The sky was left to Anthony’s experienced eye’, he ‘taught me a lot in discussions about quality materials and detail’. Later, Emily returned to Falmouth, ‘I look at the harbour and remember the paintings. The water is very calm there even when there are storms.’</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Inspiration -->
+    <div class="component hidden carousel-component white" id="inspiration">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">Inspiration</h2>
+                        <h4>Artistic Evidence: John Pine (1690-1756)</h4>
+                        <p>Before the tapestries were lost in the devastating fire of 1834, they were recorded by printmaker John Pine who published the set in 1739. Pine produced his engravings with the help of drawings made directly in front of the textiles. </p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/A.9.jpg" class="popup-image" data-copyright="© National Portrait Gallery, London" title="Richard Burchett, wood engraving after an unknown artist, published 1875"><img src="assets/img/history/small/A.9.jpg" alt="Richard Burchett, wood engraving after an unknown artist, published 1875"></a>
+                    </div>
+                </div>
+
+                <!-- slide 1.5 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">Inspiration</h2>
+                        <h4>Artistic evidence: Richard Burchett (1815-1875)</h4>
+                        <p>Pine’s engravings provided vital evidence for Richard Burchett, who was asked by Prince Albert’s Fine Arts Commission to recreate the tapestries as paintings for the Prince’s Chamber. Although Burchett produced only one painting, it set the approach which Anthony Oakshett followed in the five works to complete the series.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/history/large/6.0.jpg" class="popup-image" data-copyright="© National Portrait Gallery, London" title="‘John Pine’, by James Macardell after William Hogarth, mezzotint, about 1740–1765"><img src="assets/img/history/small/6.0.jpg" alt="‘John Pine’, by James Macardell after William Hogarth, mezzotint, about 1740–1765"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Pine's Engravings</h4>
+                        <p>As Burchett had already selected the scene at Fowey from Pine’s engravings, the House of Lords chose a further five subjects from the nine remaining engravings for the new paintings. Minute by comparison to the original tapestries, the engravings lacked much of the fine detail and gave no information about colour as they were printed in black and white.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/11.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/T11-01.jpg" class="popup-image" data-copyright="© House of Lords Library" title="The Spanish Fleet against Fowey, drawn up in the Form of a Half Moon, and the English Fleet pursuing them, an engraving by John Pine, 1739."><img src="assets/img/painting-process/large/T11-01.jpg" alt="Pine Engraving used by Burchett"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Following Burchett's painting</h4>
+                        <h4>Burchett's format</h4>
+                        <p>This image superimposes Burchett’s painting over Pine’s engraving of the same subject. The fact that the engraving was proportionally shorter is clear, as its top runs close to the line of hills, and the Royal coat of arms hovers over the sea. By extending the format of the composition upwards, Burchett was being more faithful to the appearance of the tapestries. Like him, Anthony Oakshett had to fill the differently shaped empty wall compartments in the Prince’s Chamber, and needed to work out a method of building upon Pine’s designs.  </p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/23.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png" alt="Burchett's painting superimposed over Pine's engraving"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/45.jpg" class="popup-image"><img src="assets/img/painting-process/small/45.jpg" alt="Burchett's painting superimposed over Pine's engraving"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Comparing Pine to Burchett</h4>
+                        <p>These images show a detail of Pine’s engraving on the left, against the same part of the scene as painted by Burchett, on the right.  In addition to enlarging the design, Burchett also had to add colour to make the paintings resemble tapestries.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/15.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/46.jpg" class="popup-image" data-copyright="Left: © Parliamentary Archives, Right: © Palace of Westinster Art Collection (WOA 2954)"><img src="assets/img/painting-process/small/46.jpg" alt="Pine detail juxtaposed with Burchett detail"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Design -->
+    <div class="component hidden carousel-component light-grey" id="design">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/47.jpg" class="popup-image" data-copyright="© Parliamentary Archives"><img src="assets/img/painting-process/small/47.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title">Design</h2>
+                        <h4>Challenges of scaling up</h4>
+                        <p>Some of the engravings chosen to tell the Armada story proved challenging to enlarge for the new paintings. Looking at the engravings under magnification, Anthony Oakshett found that a lot of information was missing. This was the unfortunate result of Pine’s process of reducing the Armada images in order to fit the very small scale of the engravings. </p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/15a.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/48.jpg" class="popup-image"><img src="assets/img/painting-process/small/48.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title"></h2>
+                        <h4>Adding information</h4>
+                        <p>A careful comparison of these details from Pine’s engraving and Anthony Oakshett’s painting shows that the Armada project artists had to adapt the design so that the enlarged scene appeared convincing. This entailed first checking whether the ships looked accurate. Anthony’s research into 16th century ships enabled him to understand the correct structures of the different types of vessel deployed during the Armada campaign. In addition, specialist guidance was available from a team of academics. Agreeing and implementing changes to the detail of Pine’s designs was a collaborative effort, involving Anthony, academics and the House of Lords project team.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/15b.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+            <!--<div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/49.jpg" class="popup-image"><img src="assets/img/painting-process/small/49.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title"></h2>
+                        <h4>Methods of scaling up</h4>
+                        <p>To enlarge a design, traditionally artists have drawn a grid of squares over small drawings, and correspondingly larger squares on the support for their painting. Anthony faced the same challenge, and with Bill Clibery’s help used computer technology in a modern version of this process. In this image, one of Pine’s engravings has been digitally enlarged to match the scale of a wall compartment. Rather than making a grid of squares, it was decided to use A3 sized rectangles. This meant that standard A3 paper could be used to print out a ‘tile’ for copying to canvas.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/16.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Slide 4 -->
+            <!--<div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/50.jpg" class="popup-image"><img src="assets/img/painting-process/small/50.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title"></h2>
+                        <h4>Tracings</h4>
+                        <p>Working on each A3 tile, the main shapes of the engraving were outlined in black pen (see middle section here). To the right, the simplified line drawing is shown, ready to be transferred and traced by the artists onto the canvas.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/17b.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Slide 5 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/51.jpg" class="popup-image" data-copyright="Left: © Parliamentary Archives, Right: © Palace of Westminster Art Collection (WOA 7124)"><img src="assets/img/painting-process/small/51.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title"></h2>
+                        <h4>Reinstating the sky</h4>
+                        <p>To return the design to the original format of the tapestries, Anthony Oakshett had to invent a band of sky. Here a section of Pine’s engraving (left) compared to Anthony’s painting (right) shows that a large area was added.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/17c.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <a href="assets/img/painting-process/large/52.jpg" class="popup-image"><img src="assets/img/painting-process/small/52.jpg"></a>
+                    </div>
+                    <div class="right-side">
+                        <h2 class="title"></h2>
+                        <h4>Border tracings</h4>
+                        <p>Linear plans of the new designs were created on computer, which combined the enlarged computerised tracings from the Pine engravings with actual tracings of the border of Burchett’s painting. The design modifications made by Burchett were used for the borders of each of the five new paintings, so as to make the series consistent. This echoed the consistency of border design of each of the original tapestries. </p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/17.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Colour -->
+    <div class="component hidden carousel-component white" id="colour">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">Colour</h2>
+                        <h4>The palette</h4>
+                        <p>Scientific paint analysis undertaken by conservators at IFACS studio in Bristol identified the pigments in Burchett’s painting. It was therefore possible to recreate the mixes of paint exactly. In order to translate this information onto computer, the paint colours were scanned and given an RGB, or ‘red, green, blue’ reading.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/17a.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/53.jpg" class="popup-image"><img src="assets/img/painting-process/small/53.jpg"></a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Colour on computer</h4>
+                        <p>Anthony Oakshett decided on the best colours to provide the first layer of paint. Data about the colours was programmed into the linear designs on computer, producing preliminary designs showing base colours for each painting.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/18.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/54a.jpg" class="popup-image" data-copyright="© Palace of Westminster Art Collection (WOA 7127)"><img src="assets/img/painting-process/small/54a.jpg"></a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Preparation of materials</h4>
+                        <p>Large quantities of paint were mixed to match the colours identified by scientific analysis. To make the most economical use of materials, water was poured onto the oil paint in the containers, so preventing a film forming.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/13.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/55.jpg" class="popup-image"><img src="assets/img/painting-process/small/55.jpg"></a>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Design to canvas</h4>
+                        <p>A grid of A3 tiles was made on each conservation grade canvas, using a plumb line coated in chalk. Following the A3 linear designs, the artists began to trace the composition within the rectangular ‘tile’ onto the canvases in July 2008. </p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/56.jpg" class="popup-image"><img src="assets/img/painting-process/small/56.jpg"></a>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Blocking in</h4>
+                        <p>Rather than printing out each tile for reference, the artists used images on computer monitors to find out which colours they should use. ‘Blocking-in’ of the areas of colour removed the white of the canvas, and provided a good basis for the next layers of paint. </p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/18a.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/57.jpg" class="popup-image"><img src="assets/img/painting-process/small/57.jpg"></a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Painting hotspots -->
+    <div class="component hidden carousel-component light-grey" id="scaling-up">
+        <div class="thin-container">
+            <div class="left-side">
+                <!-- Slide 1 -->
+                <div class="carousel" id="carousel-scaling-up">
+                    <div class="slide">
+                        <h2 class="title">Scaling Up</h2>
+                        <h4>Methods of scaling up</h4>
+                        <p>To enlarge a design, traditionally artists have drawn a grid of squares over small drawings, and correspondingly larger squares on the support for their painting. Anthony faced the same challenge, and with Bill Clibery’s help used computer technology in a modern version of this process. In this image, one of Pine’s engravings has been digitally enlarged to match the scale of a wall compartment. Rather than making a grid of squares, it was decided to use A3 sized rectangles. This meant that standard A3 paper could be used to print out a ‘tile’ for copying to canvas.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/16.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <h2 class="title">Scaling Up</h2>
+                        <h4>Tracings</h4>
+                        <p>Working on each A3 tile, the main shapes of the engraving were outlined in black pen (see middle section here). To the right, the simplified line drawing is shown, ready to be transferred and traced by the artists onto the canvas.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/17b.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>                
+                <!-- Slide 1 -->
+                <!--<div class="carousel" id="carousel-scaling-up">
+                    <div class="slide">
+                        <h2 class="title">Scaling Up</h2>
+                        <h4>Design to canvas</h4>
+                        <p>A grid of A3 tiles was made on each conservation grade canvas, using a plumb line coated in chalk. Following the A3 linear designs, the artists began to trace the composition within the rectangular ‘tile’ onto the canvases in July 2008. </p>
+                    </div> -->
+                    <!-- Slide 2 -->
+                    <!--<div class="slide">
+                        <h2 class="title">Scaling Up</h2>
+                        <h4>Blocking in</h4>
+                        <p>Rather than printing out each tile for reference, the artists used images on computer monitors to find out which colours they should use. ‘Blocking-in’ of the areas of colour removed the white of the canvas, and provided a good basis for the next layers of paint. </p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/18a.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png">Audio</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="controls">
+                    <div class="side-navigation" data-carousel="carousel-scaling-up">
+                        <ul>
+                            <li><a href="#" data-slide="0" class="hotspot-link slide1">&nbsp;</a></li>
+                            <li><a href="#" data-slide="1" class="hotspot-link slide2">&nbsp;</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="assets/img/painting-process/scaling-up.jpg" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Image -->
+    <div class="component hidden carousel-component white" id="main-image">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">Main Image</h2>
+                        <h4>Painting the ships</h4>
+                        <p>Ships are difficult to draw because they are complicated three dimensional objects. The curving line of a ship’s hull changes subtly when viewed from even slightly different positions. Painting on a large scale, it was necessary to include a great amount of detail about each ship. In building up the authentic appearance, including rigging, flags and armaments, Anthony Oakshett’s research proved invaluable.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/12a.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio 1</a>
+                        </div>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/20.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio 2</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/58.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection (WOA 7125)"><img src="assets/img/painting-process/small/58.jpg"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Painting the sea</h4>
+                        <p>Like Burchett, Anthony Oakshett aimed to follow the pattern of waves that appeared in Pine’s engravings. Waves at the front of the paintings have a clear three dimensional form, but flatten out and become pale as they recede into the distance.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/19a.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/59.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection (WOA 7125)"><img src="assets/img/painting-process/small/59.jpg" alt="Portland detail of galleass"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Painting the sky</h4>
+                        <p>Each sky in the paintings is subtly different, in order to convey the weather at the time of the action. However, the light source is always shown from the west, as in the evening. This was done to give consistency to the scenes.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/19b.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/60.jpg" class="popup-image"><img src="assets/img/painting-process/small/60.jpg" alt="Details of three skies pasted together"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Borders and lettering -->
+    <div class="component hidden carousel-component light-grey" id="borders">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">Borders</h2>
+                        <h4>Border decoration</h4>
+                        <p>Transferring the border design to the gilded bands around the paintings was done by pressing through the tracings with a sharp point. The indentation this produced in the gilding was then used to guide the application of paint.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/2.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/61.jpg" class="popup-image"><img src="assets/img/painting-process/small/61.jpg" alt="Painting process"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Grotesques</h4>
+                        <p>The grotesques were developed by Burchett from Pine’s engravings, and the Armada project artists copied these figures faithfully.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/62.jpg" class="popup-image" data-copyright="© Parliamentary Archives"><img src="assets/img/painting-process/small/62.jpg" alt="Painting process"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Burchett's Lettering</h4>
+                        <p>As part of his modifications Burchett applied lettering to his designs, with painted strapwork decoration either side of the picture’s title. His ingenious presentation of the names of sitters in the portraits made the writing legible, even when the painting was hung high on the wall.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/1a.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/63.jpg" class="popup-image"><img src="assets/img/painting-process/small/63.jpg" alt="Painting process"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Anthony's Lettering</h4>
+                        <p>In recreating Burchett’s lettering, Anthony Oakshett had to extend the existing alphabet, because some letters were missing. The strapwork decoration beside the titles also varied in length, making it necessary to create new designs.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/1b.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/64a.jpg" class="popup-image"><img src="assets/img/painting-process/small/64b.jpg" alt="Painting process"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portraits -->
+    <div class="component hidden carousel-component white" id="portraits">
+        <div class="thin-container">
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title">Portraits &amp; Final Glazing</h2>
+                        <h4>Invention</h4>
+                        <p>The Lord Admiral, Rear Admiral and four principal commanders (Seymour, Frobisher, Hawkins and Drake) appear along the border at the top of all six canvases. Various themes explain the selection of individuals depicted at the bottom of different paintings: naval administrators, the council of war, volunteers, senior commanders and heroes. When research failed to uncover portraits of Sir Henry Palmer and William Borough, it was decided that Lord Crathorne, Chairman of the Works of Art Committee at the time of the project, and Anthony Oakshett would step in as 21st century sitters.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/3a.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/65.jpg" class="popup-image"><img src="assets/img/painting-process/small/65.jpg" alt="Painting process"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Copying Burchett</h4>
+                        <p>Copying the portraits of key figures such as Lord Howard of Effingham and Sir Francis Drake required some invention. As Burchett’s original painting was worn and had been retouched, Anthony Oakshett referred to other period portraits to help achieve good likenesses. </p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/3b.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/66.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection, WOA 7123"><img src="assets/img/painting-process/small/66.jpg" alt="Painting process"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Other Sources</h4>
+                        <p>As a basis for some portraits, Anthony used some of the drawings by Hubert Francois Gravelot which Pine had commissioned, together with the 1739 engravings.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/67.jpg" class="popup-image" data-copyright="Left:© House of Lords Library, Right: © Parliamentary Archives"><img src="assets/img/painting-process/small/67.jpg" alt="Painting process"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Copies</h4>
+                        <p>In copying Gravelot and Pine to make this depiction of Mr Willoughby, Anthony aimed to give the portrait the appearance of a painting by Burchett.</p>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/68.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection, WOA 2954"><img src="assets/img/painting-process/small/68.jpg" alt="Painting process"></a>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="slide">
+                    <div class="left-side">
+                        <h2 class="title"></h2>
+                        <h4>Final Glazing</h4>
+                        <p>To unify the new paintings with Burchett’s prototype, the borders were toned down with a glaze, giving them a softened and aged quality.</p>
+                        <div class="audio">
+                            <a class="popup-ajax" href="ajax/painting-process/21.html" data-startat="0" target="_blank"><img src="assets/img/audio-icon.png"> Audio</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <a href="assets/img/painting-process/large/69a.jpg" class="popup-image" data-copyright="© Parliamentary Art Collection, WOA 2954" title="Burchett's Border"><img src="assets/img/painting-process/small/69a.jpg" alt="Painting process"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The completed series -->
+    <div class="component hidden gallery-carousel-component light-grey" id="the-complete-series">
+        <div class="thin-container">
+            <h2><img src="assets/img/flourish.png"> View the completed cycle of Armada paintings <img src="assets/img/flourish.png"></h2>
+
+            <div id="gallery-carousel">
+                <div class="gallery-slide">
+                    <a href="the-discovery-of-the-spanish-fleet-opposite-the-lizard.html">
+                        <img src="assets/img/painting-process/the-completed-series/the-discovery-of-the-spanish-fleet-opposite-the-lizard-large.png" alt="The Discovery of the Spanish Fleet opposite the Lizard. by Anthony Oaskshett,2010 ">
+                        <p>The Discovery of the Spanish Fleet Opposite the Lizard</p>
+                        <small>View this painting in more detail</small>
+                    </a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="the-english-fleet-pursuing-the-spanish-fleet-against-fowey.html">
+                        <img src="assets/img/painting-process/the-completed-series/the-english-fleet-pursuing-the-spanish-fleet-against-fowey.png" alt="The English Fleet Pursuing the Spanish fleet against Fowey, by Richard Burchett, about 1860">
+                        <p>The English Fleet Pursuing the Spanish Fleet Against Fowey</p>
+                        <small>View this painting in more detail</small>
+                    </a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="drake-takes-de-valdes-galleon-the-lord-admiral-pursues-the-enemy.html">
+                        <img src="assets/img/painting-process/the-completed-series/drake-takes-de-valdes-galleon-the-lord-admiral-pursues-the-enemy-large.png" alt="Drake takes de Valdez's Galleon: The Lord Admiral Pursues the Enemy by Anthony Oakshett, 2010">
+                        <p>Drake Takes De Valdez's Galleon: the Lord Admiral Pursues the Enemy</p>
+                        <small>View this painting in more detail</small>
+                    </a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="the-engagement-of-both-fleets-against-the-isle-of-portland.html">
+                        <img src="assets/img/painting-process/the-completed-series/the-engagement-of-both-fleets-against-the-isle-of-portland-large.png" alt="The Engagement of Both Fleets against the Isle of Portland by Anthony Oaskhett, 2010 ">
+                        <p>The Engagement of Both Fleets Against the Isle of Portland</p>
+                        <small>View this painting in more detail</small>
+                    </a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="the-sharpest-engagement-against-the-isle-of-wight.html">
+                        <img src="assets/img/painting-process/the-completed-series/the-sharpest-engagement-against-the-isle-of-wight-large.png" alt="The Engagement of Both Fleets against the Isle of Wight by Anthony Oakshett, 2010">
+                        <p>The Sharpest engagement against the Isle of Wight</p>
+                        <small>View this painting in more detail</small>
+                    </a>
+                </div>
+                <div class="gallery-slide">
+                    <a href="english-fireships-dislodge-the-spanish-fleet-before-calais.html">
+                        <img src="assets/img/painting-process/the-completed-series/english-fireships-dislodge-the-spanish-fleet-before-calais-large.png" alt="English Fireships Dislodge the Spanish Fleet before Calais, by Anthony Oakshett, 2010">
+                        <p>English Fireships Dislodge the Spanish Fleet Before Calais</p>
+                        <small>View this painting in more detail</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="push"></div>
+        </div><!-- /#wrapper -->
+        <div id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <ul class="column">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="painting-process.html">Painting Process</a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="credits.html">Credits</a></li>
+                    </ul>
+                    <ul class="column">
+                        <li><a href="mailto:curator@parliament.uk">Contact</a></li>
+                        <li><a href="http://www.parliament.uk/art">View more House of Lords Artwork</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <span>&copy; 2015 House of Lords</span><img src="assets/img/house-of-lords.jpg">
+                    <span style="float: right;">Site by <a href="http://www.studio24.net">Studio24</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Libraries -->
+        <script src="assets/js/libraries/jquery.min.js"></script>
+        <script src="assets/js/libraries/jquery.nav.js"></script>
+        <script src="assets/js/libraries/jquery.slick.min.js"></script>
+        <script src="assets/js/libraries/jquery.audioplayer.min.js"></script>
+        <script src="assets/js/libraries/jquery.lightbox.min.js"></script>
+        <script src="assets/js/libraries/jquery.viewportchecker.js"></script>
+        <script src="assets/js/libraries/jquery.panzoom.min.js"></script>
+        <script src="assets/js/libraries/magnific.js"></script>
+        <script src="assets/js/libraries/jquery-ui.min.js"></script>
+
+        <!-- Our Code -->
+        <script src="assets/js/lib.min.js"></script>
+        <script src="assets/js/main.min.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-51081446-1', 'parliament.uk');
+            ga('send', 'pageview');
+        </script>
+
+<script>
+    $(document).ready(function(){
+
+        // Setup the values for the timeline
+        var timelineValues = {
+            '#the-painting-process' : '2006',
+            '#design' : '2006',
+            '#lettering' : '2006',
+            '#portraits' : '2006',
+            '#final-glazing' : '2006',
+            '#the-complete-series' : '2007'
+        };
+
+        // Run the library code to create the timeline
+        Armada.Timeline.create(timelineValues);
+
+        $('#gallery-carousel').slick({
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 3,
+            lazyLoad: 'ondemand'
+        });
+
+    });
+</script>
+
+    </body>
+</html>

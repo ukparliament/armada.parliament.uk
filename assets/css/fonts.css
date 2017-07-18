@@ -1,0 +1,66 @@
+/*!
+ * ArmadaTapestries
+ * @author Studio 24
+ * @version 0.0.1
+ * Copyright 2014 Studio 24.  licensed.
+ */
+
+/**
+ * Font families
+ */
+body {
+  font-family: 'Merriweather', 'Georgia', serif;
+  color: #161410;
+  font-weight: 200;
+}
+
+h1 {
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-weight: 200;
+}
+
+h2 {
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-weight: 200;
+}
+
+h3 {
+  font-family: 'Novecentosanswide-DemiBold', Verdana, Arial, sans-serif;
+  text-transform: lowercase;
+  font-weight: 200;
+}
+
+h4 {
+  font-family: 'Novecentosanswide-DemiBold', Verdana, Arial, sans-serif;
+  text-transform: lowercase;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+a {
+  color: #c7b299;
+  text-decoration: none;
+}
+
+.flourish {
+  text-align: center;
+  vertical-align: middle;
+}
+.flourish:before, .flourish:after {
+  content: ' ';
+  width: 100px;
+  height: 20px;
+  display: inline-block;
+  background: url(../img/sprite.png);
+  background-position: 0 -1123px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.flourish:before {
+  margin-left: -90px;
+}
+.flourish:after {
+  background-position: 0 -1230px;
+}
+
+/*# sourceMappingURL=fonts.css.map */
