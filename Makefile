@@ -19,4 +19,4 @@ deploy_to_release:
 		--exclude "Makefile" \
 		--exclude "README.md" \
 		--exclude "build.json" \
-		--acl=public-read --delete . s3://$(AWS_ACCOUNT).armada
+		--acl=public-read --delete . s3://$(AWS_ACCOUNT).armada-paintings
