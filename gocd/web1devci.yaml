@@ -1,0 +1,30 @@
+pipelines:
+  armada-paintings:
+    group: common
+    label_template: "${COUNT}"
+    materials:
+      armada-paintings-git:
+        git: https://github.com/ukparliament/armada.parliament.uk.git
+        branch: development
+        auto_update: true
+    stages:
+      - deploy:
+          jobs:
+            deploy:
+              tasks:
+                - exec:
+                    run_if: passed
+                    command: make
+                    arguments:
+                      - checkout_to_release
+                - exec:
+                    run_if: passed
+                    command: make
+                    arguments:
+                      - deploy_to_release
+
+
+environments:
+  Web.DEVCI:
+    pipelines:
+      - armada-paintings
