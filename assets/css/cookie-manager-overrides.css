@@ -1,0 +1,11 @@
+#cookiemodal {
+  z-index: 10000 !important;
+}
+
+#cookiemodal h3 {
+  text-transform: none;
+}
+
+.cookie-manager-overlay {
+  z-index: 9999 !important;
+}
