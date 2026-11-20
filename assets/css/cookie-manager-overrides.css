@@ -1,11 +1,11 @@
-#cookiemodal {
+#p-cookie-modal {
   z-index: 10000 !important;
 }
 
-#cookiemodal h3 {
+#p-cookie-modal h3 {
   text-transform: none;
 }
 
-.cookie-manager-overlay {
+.p-cookie-modal__overlay {
   z-index: 9999 !important;
 }
